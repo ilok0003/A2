@@ -1,8 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 40px;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9; /* A lighter shade for background */
+    line-height: 1.6; /* Improving readability */
+    color: #4a4a4a; /* Darker text for better contrast */
 }
 
 .container {
@@ -12,46 +14,59 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff; /* Container background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded edges for modern touch */
+    overflow: hidden; /* In case any child elements reach the edge */
 }
 
 h1, h2 {
-    color: #0077cc;
+    color: #2c3e50; /* A more subdued, professional color */
     margin-bottom: 20px;
-    width: 100%; /* This ensures they stretch across the entire container width */
+    width: 100%;
+    text-align: center; /* Centered headers */
 }
 
 h1 {
-    font-size: 28px;
-    font-family: 'Raleway', sans-serif;
+    font-size: 32px; /* Slightly larger for better prominence */
+    font-weight: 500;
+    margin-top: 0;
 }
 
 h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 2px solid #ecf0f1; /* Subtle line below subheadings */
+    padding-bottom: 10px;
 }
 
 .highlight {
-    color: #0077cc;
+    color: #3498db; /* A more vibrant highlight color */
     font-weight: bold;
 }
 
 .main-description, .description, .visualization-description {
-    font-size: 14px;
-    color: #7a7a7a;
+    font-size: 15px; /* Increased for readability */
+    color: #7f8c8d; /* A softer color for description */
     margin-bottom: 20px;
+    text-align: justify; /* Full justification for a cleaner look */
 }
 
 .main-description {
     font-size: 16px;
     margin-bottom: 40px;
+    border-top: 1px solid #ecf0f1; /* Line at the top for separation */
+    padding-top: 20px;
 }
 
 .visualization-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%; /* This ensures it stretches across the entire container width */
+    width: 100%;
     margin-bottom: 60px;
+    border-bottom: 1px solid #ecf0f1; /* Line below each section for separation */
+    padding-bottom: 40px;
 }
 
 .description-container {
@@ -65,11 +80,12 @@ h2 {
 
 .visualization {
     flex: 2;
-    width: 100%; /* This ensures that the visualization takes the full width of its container */
+    width: 100%;
     margin-bottom: 40px;
     padding: 20px;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* This ensures padding and border are included in the total width */
+    box-sizing: border-box;
+    border-radius: 8px; /* Consistent rounded edges */
 }
