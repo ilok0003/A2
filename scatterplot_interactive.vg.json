@@ -1,32 +1,34 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "config": {
-      "font": "Arial",
-      "title": {
-          "font": "Arial",
-          "fontSize": 20,
-          "anchor": "middle",
-          "color": "#333"
-      },
-      "axis": {
-          "labelFont": "Arial",
-          "titleFont": "Arial"
-      },
-      "legend": {
-          "labelFont": "Arial",
-          "titleFont": "Arial"
-      },
-      "header": {
-          "labelFont": "Arial",
-          "titleFont": "Arial"
-      }
-  },
-    "width": 800,
-    "height": 600,
-    "title": "Influenza Cases per Country (2017)",
-    "data": {
-      "url": "Malaria.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "autosize": { "type": "fit", "contains": "padding" },
+  "config": {
+    "font": "Arial",
+    "title": {
+        "font": "Arial",
+        "fontSize": 20,
+        "anchor": "middle",
+        "color": "#333"
     },
+    "axis": {
+        "labelFont": "Arial",
+        "titleFont": "Arial",
+        "grid": true,
+        "gridOpacity": 0.5
+    },
+    "legend": {
+        "labelFont": "Arial",
+        "titleFont": "Arial",
+        "gradientLength": 200
+    },
+    "header": {
+        "labelFont": "Arial",
+        "titleFont": "Arial"
+    }
+  },
+  "title": "Influenza Cases per Country (2017)",
+  "data": {
+    "url": "Malaria.csv"
+  },
     "params": [
       {
         "name": "Population_Above",
