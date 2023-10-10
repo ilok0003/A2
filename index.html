@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vega Visualizations</title>
+    <title>Influenza Analysis</title>
     <!-- Import Vega & Vega-Lite libraries -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
@@ -15,31 +15,39 @@
 
 <body>
     <div class="container">
-        <h1>Influenza Visualization</h1>
+        <h1>Influenza Analysis</h1>
         <p class="main-description">
-            Dive deep into a thorough exploration of <span class="highlight">influenza cases</span> across various regions. This comprehensive <span class="highlight">visualization</span> unravels intricate patterns, revealing the intensities and shifts in influenza occurrences. By delving into this analysis, <span class="highlight">professionals</span>, <span class="highlight">researchers</span>, and <span class="highlight">policymakers</span> can gain invaluable insights into the dynamic landscape of influenza spread and its repercussions.
+            This <span class="highlight">comprehensive analysis</span> delves into influenza cases across various
+            regions. The data provides <span class="highlight">insights</span> into influenza occurrences, enabling
+            professionals, researchers, and policymakers to understand the spread and its repercussions.
         </p>
-        
-        
-        <!-- First Visualization: Scatter Plot -->
+
+        <!-- First Analysis: Scatter Plot -->
         <div class="visualization-section">
             <div class="description-container">
-                <h2>Scatter Plot Analysis</h2>
+                <h2>Correlation Analysis</h2>
                 <p class="visualization-description">
-                    The <span class="highlight">scatter plot</span> serves as a powerful tool to visualize the intricate relationship among total deaths, cases, and population regarding influenza across countries in 2017. Such <span class="highlight">visualizations</span> are pivotal in decoding patterns and discerning correlations, which can be instrumental in understanding the disease's distribution and severity across nations. By analyzing this scatter plot, one can pinpoint potential outliers, discover hidden trends, and gauge the impact of influenza on different countries. This offers a unique opportunity to compare and contrast the <span class="highlight">health infrastructure</span>, preventive measures, and public response of different nations, enabling a holistic understanding of <span class="highlight">global health dynamics</span>.
+                    The correlation between <span class="highlight">total deaths</span>, cases, and population in 2017
+                    offers an understanding of the influenza impact across nations. This analysis can help identify
+                    potential outliers and trends, providing insights into the health infrastructure and public response
+                    of various countries. Such insights are instrumental in understanding <span class="highlight">global
+                        health dynamics</span> and formulating strategies.
                 </p>
             </div>
             <div class="visualization" id="vis1"></div>
         </div>
 
-        <!-- Second Visualization: Choropleth Map -->
+        <!-- Second Analysis: Choropleth Map -->
         <div class="visualization-section">
             <div class="description-container">
-                <h2>Choropleth Map Overview</h2>
+                <h2>Geographical Overview</h2>
                 <p class="visualization-description">
-                    <span class="highlight">Choropleth maps</span> provide a spatial representation of data, offering a visual narrative that's both compelling and informative. This particular map showcases the density of influenza cases, with each region color-coded based on the number of cases per 10,000 population. Such <span class="highlight">visualizations</span> are pivotal in understanding regional disparities, identifying areas of concern, and formulating targeted interventions. The geographical distribution of data provides context, allowing for a nuanced understanding of how various factors, such as <span class="highlight">climate</span>, population density, <span class="highlight">healthcare infrastructure</span>, and public policies, might influence the spread and impact of influenza. By observing this map, one can gain insights into the global landscape of influenza prevalence and design strategies to mitigate its impact.
+                    The <span class="highlight">geographical distribution</span> of influenza cases offers a nuanced
+                    understanding of <span class="highlight">regional disparities</span> and the various influencing
+                    factors. By examining the number of cases per 10,000 population in different regions, one can
+                    pinpoint areas of concern, understand the influence of factors like climate and healthcare
+                    infrastructure, and design interventions to mitigate the disease's impact.
                 </p>
-        
             </div>
             <div class="visualization" id="vis2"></div>
         </div>
@@ -51,7 +59,7 @@
         const specVis2 = "scatterplot_interactive.vg.json";
         vegaEmbed('#vis1', specVis1, { "actions": false });
         vegaEmbed('#vis2', specVis2, { "actions": false })
-            .then(result => {})
+            .then(result => { })
             .catch(console.error);
     </script>
 </body>
