@@ -11,24 +11,19 @@ body {
     padding: 20px;
 }
 
+h1, h2 {
+    color: #0077cc;
+    margin-bottom: 20px;
+}
+
 h1 {
     font-size: 28px;
-    margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
-    color: #0077cc;
 }
 
-.description-container {
-    display: flex;
-    justify-content: space-between; /* Adjusted to space content apart */
-    align-items: flex-start;
-}
-
-p.description {
-    width: 40%;
-    font-size: 14px;
-    color: #7a7a7a;
-    margin-bottom: 20px;
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .highlight {
@@ -36,34 +31,14 @@ p.description {
     font-weight: bold;
 }
 
-.visualization-section {
-    width: 55%; /* Adjusted for side-by-side layout */
-    margin-bottom: 60px;
-}
-
-h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #0077cc;
-}
-
-.visualization-description {
+.main-description, .description, .visualization-description {
     font-size: 14px;
-    margin-bottom: 20px;
     color: #7a7a7a;
-}
-
-.visualization {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .main-description {
     font-size: 16px;
-    color: #7a7a7a;
     margin-bottom: 40px;
 }
 
@@ -72,12 +47,22 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 40px;
+    padding-right: 60px; /* Increase right padding for more space */
+    max-width: 40%; /* Set a consistent width for all descriptions */
+    margin-right: 20px; /* Add a margin to separate from visualization */
 }
 
 .visualization-section {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 60px;
+    align-items: flex-start; /* Align the start of the description with the visualization */
+    margin-bottom: 80px; /* Increase bottom margin for more space between sections */
+}
+
+.visualization {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
