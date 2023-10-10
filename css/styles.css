@@ -60,26 +60,26 @@ h2 {
 }
 
 .visualization-section {
-    /* display: flex; */
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* width: 100%; */
+    width: 100%;
     margin-bottom: 60px;
     border-bottom: 1px solid #ecf0f1; /* Line below each section for separation */
     padding-bottom: 40px;
 }
 
 .description-container {
-    /* flex: 1; */
-    /* display: flex; */
+    flex: 1;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 40px;
 }
 
 .visualization {
-    /* flex: 2; */
-    /* width: 100%; */
+    flex: 2;
+    width: 600px;
     margin-bottom: 40px;
     padding: 20px;
     background-color: #ffffff;
