@@ -45,25 +45,27 @@ h2 {
 .visualization-section {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align the top of the description with the visualization */
+    align-items: flex-start;
     margin-bottom: 60px;
+    overflow: hidden; /* Add this to ensure content doesn't overflow */
 }
 
 .description-container {
-    flex: 1; /* 1 part of the ratio for description */
+    flex: 1;
+    max-width: 30%; /* Explicitly set max-width to prevent overflow */
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 40px;
-    width: 30%; /* Adjusted width for description */
 }
 
 .visualization {
-    flex: 2; /* 2 parts of the ratio for visualization */
-    width: 60%; /* Adjusted width for visualization */
+    flex: 2;
+    max-width: 60%; /* Explicitly set max-width to prevent overflow */
     margin-bottom: 40px;
     padding: 20px;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
