@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 40px; 
+    padding: 40px;
     background-color: #f4f4f4;
 }
 
@@ -14,34 +14,24 @@ body {
 h1 {
     font-size: 28px;
     margin-bottom: 10px;
-    font-family: 'Raleway', sans-serif; /* Custom font for the title */
-    color: #0077cc; /* Accent color for the title */
-}
-
-.description-container {
-    display: flex;
-    align-items: flex-start;
+    font-family: 'Raleway', sans-serif;
+    color: #0077cc;
 }
 
 p.description {
-    flex: 1;
     margin-right: 40px;
     font-size: 14px;
     color: #7a7a7a;
+    margin-bottom: 40px;
 }
 
 .highlight {
-    color: #0077cc; /* Accent color for highlighted words */
+    color: #0077cc;
     font-weight: bold;
 }
 
-.visualization {
-    flex: 2;
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+.visualization-section {
+    margin-bottom: 60px;
 }
 
 h2 {
@@ -49,7 +39,6 @@ h2 {
     margin-top: 40px;
     margin-bottom: 10px;
     color: #0077cc;
-    /* Accent color for the subheader */
 }
 
 .visualization-description {
@@ -58,7 +47,10 @@ h2 {
     color: #7a7a7a;
 }
 
-.visualization-section {
-    margin-bottom: 60px;
-    /* Add spacing between visualization sections */
+.visualization {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
