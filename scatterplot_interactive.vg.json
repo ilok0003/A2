@@ -24,7 +24,7 @@
         "titleFont": "Arial"
     }
   },
-  "width": 550,
+  "width": 500,
   "height": 400,
   "title": "Influenza Cases per Country (2017)",
   "data": {
