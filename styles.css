@@ -6,32 +6,40 @@ body {
 }
 
 .container {
-    max-width: 1200px; /* Added this to restrict the width and center content */
-    margin: 0 auto; /* Centers the container */
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
 h1 {
     font-size: 28px;
     margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif; /* Custom font for the title */
+    color: #0077cc; /* Accent color for the title */
 }
 
-p {
-    margin-bottom: 40px;
+.description-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+p.description {
+    flex: 1;
+    margin-right: 40px;
+    font-size: 14px;
+    color: #7a7a7a;
+}
+
+.highlight {
+    color: #0077cc; /* Accent color for highlighted words */
+    font-weight: bold;
 }
 
 .visualization {
+    flex: 2;
     margin-bottom: 40px;
     padding: 20px;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-#choropleth_map {
-    position: absolute;
-    top: 120px;
-    bottom: 120px;
-    left: 120px;
-    right: 120px;
 }
