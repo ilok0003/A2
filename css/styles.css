@@ -43,27 +43,25 @@ h2 {
 }
 
 .description-container {
-    flex: 1;
+    flex: 1; /* 1 part of the ratio for description */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 60px; /* Increase right padding for more space */
-    max-width: 40%; /* Set a consistent width for all descriptions */
-    margin-right: 20px; /* Add a margin to separate from visualization */
+    padding-right: 40px;
 }
 
 .visualization-section {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align the start of the description with the visualization */
-    margin-bottom: 80px; /* Increase bottom margin for more space between sections */
+    align-items: center;
+    margin-bottom: 60px;
 }
 
 .visualization {
+    flex: 2; /* 2 parts of the ratio for visualization */
     margin-bottom: 40px;
     padding: 20px;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    flex: 1;
 }
