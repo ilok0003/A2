@@ -1,0 +1,14 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 400,
+    "data": {"url": "https://raw.githubusercontent.com/lllkl12/FIT3179_Submission/main/asgn2/data/share_of_energy_from_renewable_sources_processed.csv"},
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "bin": true,
+        "field": "Value"
+      },
+      "y": {"aggregate": "count"}
+    }
+  }

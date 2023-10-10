@@ -1,0 +1,142 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text":"Share of Energy from Renewable Sources in European Union (EU) over the Years",
+      "fontSize":16,
+      "subtitle":" "
+    }, 
+    "repeat":["2011", "2016","2020"],
+    "columns": 3,
+    "spec":{
+    "width": 380,
+    "height": 350,
+    "projection": {
+      "type": "equalEarth"
+    },
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/lllkl12/FIT3179_Submission/main/asgn2/map_js/europe.json",
+          "format": {"type": "topojson", "feature": "ne_50m_admin_0_countries"}
+        },
+        "transform": [
+            {
+            "calculate": "datum.properties.NAME + ' not in European Union (EU) as in 2020'",
+            "as": "note"
+            }
+        ],
+        "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"},
+        "encoding": {"tooltip": {"field": "note"}}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/lllkl12/FIT3179_Submission/main/asgn2/map_js/ocean.json",
+          "format": {"type": "topojson", "feature": "ne_50m_ocean"}
+        },
+        "mark": {"type": "geoshape", "fill": "#edf8fb"}
+      },
+  
+      {
+        "data":{
+          "url": "https://raw.githubusercontent.com/lllkl12/FIT3179_Submission/main/asgn2/data/share_of_energy_from_renewable_sources_wide.csv"
+        },
+        "transform": [
+          {
+            "lookup": "GEO",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/lllkl12/FIT3179_Submission/main/asgn2/map_js/europe.json",
+                "format":{"type": "topojson", "feature": "ne_50m_admin_0_countries"}
+              },
+              "key": "properties.NAME"
+            },"as": "geo"
+          },
+          {"filter": {"field": "2020", "valid": true}}
+        ],
+        "params": [{"name": "countrySelection", "select": {"type": "point"}}],
+        "mark": {"type": "geoshape", "stroke": "white"},
+        "encoding": {
+          "shape":{"field":"geo", "type": "geojson"},
+          "color": {
+            "field": {"repeat": "repeat"},
+            "type": "quantitative",
+            "scale": {
+              "type": "threshold",
+              "domain": [15, 20, 30, 50],
+              "range": ["#addd8e", "#78c679", "#41ab5d", "#238443", "#005a32"]
+            },
+            "legend": {"title": "Percentage", "orient": "bottom"}
+          },
+          "opacity":{
+            "condition":{"param": "countrySelection","empty": true, "value":1},
+            "value":0.3
+          },
+          "tooltip": [
+            {"field": "GEO", "type": "nominal", "title": "Country"},
+            {"field": {"repeat": "repeat"}, "type": "quantitative", "format":".1f", "title":"Renewable Energy (%)"}
+          ]
+        }
+      },
+      
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/lllkl12/FIT3179_Submission/main/asgn2/map_js/graticules.json",
+          "format": {"type": "topojson", "feature": "ne_50m_graticules_30"}
+        },
+        "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
+      },
+
+
+      {
+        "data": {
+          "values": [
+          {
+          "2011": "Year: 2011",
+          "2016": "Year: 2016",
+          "2020": "Year: 2020"
+          }
+          ]
+          },
+          "mark": {
+          "type": "text",
+          "baseline": "bottom",
+          "fontSize":13,
+          "fontStyle":"bold",
+          "x": 170,
+          "y": 10
+          },
+          "encoding": {"text": {"field": {"repeat": "repeat"}}}
+          },
+
+          
+      {
+        "data":{
+          "url": "https://raw.githubusercontent.com/lllkl12/FIT3179_Submission/main/asgn2/data/share_of_energy_from_renewable_sources_wide.csv"
+        },
+        "mark":{
+          "type":"text",
+          "align": "center",
+          "baseline": "middle",
+          "fontSize": 12,
+          "dx":-100,
+          "dy":-90,
+          "fontStyle":"bold"
+        },
+        "encoding": {
+          "text":{"field":"GEO", "type":"nominal"},
+          "color":{"value":"black"}
+        },
+        "transform": [
+          {"filter": {"param": "countrySelection", "empty": false}}
+        ]
+      }
+    ]
+},
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+  }

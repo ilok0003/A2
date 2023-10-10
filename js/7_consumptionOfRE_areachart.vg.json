@@ -1,0 +1,133 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/lllkl12/FIT3179_Submission/main/asgn2/data/consumption_of_renewables_and_wastes_processed.csv"},
+    "params":[
+          {
+            "name":"country_selection",
+            "bind":{
+              "input": "select",
+              "options": [
+                null,
+                "Belgium",
+                "Bulgaria",
+                "Czechia",
+                "Denmark",
+                "Germany",
+                "Estonia",
+                "Ireland",
+                "Greece",
+                "Spain",
+                "France",
+                "Croatia",
+                "Italy",
+                "Cyprus",
+                "Latvia",
+                "Lithuania",
+                "Luxembourg",
+                "Hungary",
+                "Malta",
+                "Netherlands",
+                "Austria",
+                "Poland",
+                "Portugal",
+                "Romania",
+                "Slovenia",
+                "Slovakia",
+                "Finland",
+                "Sweden",
+                "United Kingdom"
+              ],
+              "labels": [
+                "European Union",
+                "Belgium",
+                "Bulgaria",
+                "Czechia",
+                "Denmark",
+                "Germany",
+                "Estonia",
+                "Ireland",
+                "Greece",
+                "Spain",
+                "France",
+                "Croatia",
+                "Italy",
+                "Cyprus",
+                "Latvia",
+                "Lithuania",
+                "Luxembourg",
+                "Hungary",
+                "Malta",
+                "Netherlands",
+                "Austria",
+                "Poland",
+                "Portugal",
+                "Romania",
+                "Slovenia",
+                "Slovakia",
+                "Finland",
+                "Sweden",
+                "United Kingdom"
+              ],
+              "name": "Country selection: "
+            }
+          }
+        ],
+    "title": {
+      "text":"Consumption of Renewable Energy",
+      "fontSize":16,
+      "subtitle":" ",
+      "align": "right",
+      "dx":-118
+    },
+    "width": 650, "height": 350,
+    "encoding": {
+      "x": {
+        "field": "TIME", 
+        "type": "temporal",
+        "title":"Year", 
+        "axis": {"grid":false}
+        }
+    },
+    "layer":[
+    {
+      "mark": "area",
+      "params": [
+          {
+            "name":"category_selection",
+            "select":{"type":"point","fields": ["SIEC"]},
+            "bind":"legend"
+          }
+      ],
+      "encoding": {
+        
+        "y": {"field":"Value", "type":"quantitative", "title":"Capacity (Terajoule)", "axis": {"grid":false}},
+        "color": {"field": "SIEC", "type":"nominal", "title":"Renewable Energy",
+          "scale":{
+            "domain":{"param": "category_selection"},
+            "scheme": "accent"
+          },
+          "legend":{"orient": "top", "labelFontSize":11}
+        },
+        "tooltip":[
+          {"field": "GEO", "type": "nominal", "title": "Country"},
+          {"field": "TIME", "type": "temporal", "title": "Year", "formatType": "year"},
+          {"field": "SIEC", "type": "nominal", "title": "Energy Type"},
+          {"field": "Value", "type": "quantitative", "title": "Production Capacity (Terajoule)", "format":",.0f"}
+        ]
+    
+      },
+      "transform": [
+          {"filter":"country_selection == null || datum.GEO == country_selection"},
+          {"filter":"country_selection != null || datum.GEO ==  'European Union - 27 countries (from 2020)'"},
+          {"filter": {"param": "category_selection"}}
+        ]
+    }
+    ],
+    "config": {
+      "style": {
+        "cell": {
+          "stroke": "transparent"
+        }
+      }
+    } 
+  }
