@@ -1,0 +1,181 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+      "font": "Arial",
+      "title": {
+          "font": "Arial",
+          "fontSize": 20,
+          "anchor": "middle",
+          "color": "#333"
+      },
+      "axis": {
+          "labelFont": "Arial",
+          "titleFont": "Arial"
+      },
+      "legend": {
+          "labelFont": "Arial",
+          "titleFont": "Arial"
+      },
+      "header": {
+          "labelFont": "Arial",
+          "titleFont": "Arial"
+      }
+  },
+    "width": 800,
+    "height": 600,
+    "title": "Influenza Cases per Country (2017)",
+    "data": {
+      "url": "Malaria.csv"
+    },
+    "params": [
+      {
+        "name": "Population_Above",
+        "value": 0,
+        "bind": {
+          "input": "range",
+          "min": 0,
+          "max": 100000000,
+          "step": 1000000,
+          "name": "Minimum Population: "          
+        }
+      },
+      {
+        "name": "Region_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "Eastern Mediterranean",
+            "Africa",
+            "Americas",
+            "Europe",
+            "South-East Asia",
+            "Western Pacific"
+          ],
+          "labels": [
+            "Show All Regions",
+            "Eastern Mediterranean",
+            "Africa",
+            "Americas",
+            "Europe",
+            "South-East Asia",
+            "Western Pacific"
+          ],
+          "name": "Region Selection: "
+        }
+      }
+    ],
+    "transform": [
+      {"filter": "datum.Total_cases > 0"},
+      {"filter": "datum.Deaths > 0"},
+      {"filter": "datum.Population > Population_Above"},
+      {
+        "filter": "Region_selection == null || datum.Region == Region_selection"
+      },
+      {
+        "calculate": "datum.Total_cases/datum.Population * 10000",
+        "as": "Cases per 10,000"
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "Total_cases",
+        "type": "quantitative",
+        "title": "Total Cases",
+        "axis": {"tickCount": 7},
+        "scale": {"type": "log", "domain": [1, 100000000]}
+      },
+      "y": {
+        "field": "Deaths",
+        "type": "quantitative",
+        "axis": {"tickCount": 6},
+        "scale": {"type": "log", "domain": [1, 1000000]}
+      }
+    },
+    "layer": [
+      {
+        "mark": "circle",
+        "encoding": {
+          "size": {
+            "field": "Population",
+            "type": "quantitative",
+            "scale": {
+              "type": "sqrt",
+              "domain": [0, 1500000000],
+              "range": [10, 400]
+          },
+          "legend": {
+            "format": "d",
+            "labelExpr": "datum.value >= 1000000000 ? (datum.value / 1000000000) + 'B' : datum.value >= 1000000 ? (datum.value / 1000000) + 'M' : datum.label"
+        }
+          },
+          "color": {
+            "field": "Region",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "Eastern Mediterranean",
+                "Africa",
+                "Americas",
+                "Europe",
+                "South-East Asia",
+                "Western Pacific" 
+              ],
+              "range": [
+                "#1f77b4",
+                "#ff7f0e",
+                "#2ca02c",
+                "#d62728",
+                "#9467bd",
+                "#8c564b"
+              ]
+              
+            }
+          },
+          "opacity": {"value": 0.8},
+          "tooltip": [
+            {"field": "Country", "type": "nominal"},
+            {"field": "Total_cases", "type": "quantitative", "title": "Total Cases"},
+            {"field": "Deaths", "type": "quantitative"},
+            {
+              "field": "Cases per 10,000 Population",
+              "type": "quantitative",
+              "format": ".2f"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "middle",
+          "dx": -10,
+          "fontSize": 13,
+          "fontWeight": "bold"
+        },
+        "encoding": {
+          "text": {
+            "condition": {
+              "test": "datum.Population > 100000000 || datum.Deaths > 10000", 
+              "field": "Country",
+              "type": "nominal"
+            },
+            "value": ""
+          },
+          "color": {"value": "#333"},
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country Name"},
+                    {"field": "Total_cases", "type": "quantitative", "title": "Total Influenza Cases"},
+                    {"field": "Deaths", "type": "quantitative", "title": "Total Deaths"},
+                    {
+                        "field": "Cases per 10,000 Population",
+                        "type": "quantitative",
+                        "title": "Cases per 10,000 People",
+                        "format": ".2f"
+                    }
+          ]
+        }
+      }
+    ]
+  }

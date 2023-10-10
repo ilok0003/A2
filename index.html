@@ -1,174 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vega Visualizations</title>
 
-  <!-- Import pure.css -->
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
-    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+    <!-- Import Vega & Vega-Lite libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
 
-
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" media="all">
 </head>
+
 <body>
+    <div class="container">
+        <!-- Title and Description -->
+        <h1>Influenza Visualization</h1>
+        <p>This visualization provides insights into influenza cases by region and their impact on the population.</p>
 
-<div class="page">
-
-  <!-- pure grid group -->
-  <div class="pure-g">
-    <div class="pure-u-1-1">
-      <h1>Climate Change Migitation Effort in European Union Countries</h1>
-    </div>
-  
-    <div class="pure-u-1-1" style="padding-top: 0px;">
-      <h2>Greenhouse Gas Emission</h2>
-    </div>
-    <div class="pure-u-1-4">
-      <div class="text description-left">
-        Climate change and global warming is causing increased and irreversible changes to rainfall patterns, oceans and winds in all regions of the world. In Europe, report predicts an increase in the frequency and intensity of extreme weather events, including marine heatwaves, and warns that a 2°C increase in temperature will have critical effects for nature and people.Higher temperatures and intensified weather events will also result in huge costs for the EU's economy and hamper countries' ability to produce food. 
-        <br>
-
-        However, according to scientists, human action can change the course of events. Immediate, rapid and large-scale reductions in greenhouse gas emissions and reaching <b>net-zero CO2 emissions</b> have the potential to limit climate change and its effects. EU countries have set binding emission targets for key sectors of the economy to substantially reduce greenhouse gas emissions. By 2017, the EU had <b>reduced greenhouse gas emissions by almost 22%</b> compared to 1990, reaching its 2020 emission reduction target three years ahead of schedule (Council of the EU and the European Council, 2022).
-      </div>
-    </div>
-    <div class="pure-u-3-4">
-        <div id="chart8"  class="vis-container"></div>
-    </div>
-    <div class="pure-u-1-1">
-      <div class="text right-footnote" style="padding-right: 105px;">Emission Index is relative to year 1990 (1990, Index=100)</div>
-    </div>
-  </div>
-
-
-  <!-- pure grid group -->
-  <div class="pure-g">
-    <div class="pure-u-1-1">
-      <h2>Renewable Energy</h2>
-    </div>
-    <div class="pure-u-1-1">
-        <div id="chart1"  class="vis-container"></div>
-    </div>
-  </div>
-
-  <!-- pure grid group -->
-  <div class="pure-g">
-    <div class="pure-u-1-3 text" style="width: 33%; padding-right: 1%;">
-      Renewable energy sources, also called renewables, are energy sources that replenish (or renew) themselves naturally. Renewable energy playes an important role in reducing greenhouse gas emission, particularly on Carbon Dioxide (CO2) emission. 
-    </div>
-    <div class="pure-u-1-3 text" style="width: 32%; padding-right: 1%;">
-      Types of renewable energy includes <b>solar</b>, <b>wind</b>, <b>hydro</b>, <b>solid and liquid biofuel</b>. Renewable energy sources in energy statistics can be classified into combustible and non-combustible renewables depending on how energy is generated from them.  
-    </div>
-    <div class="pure-u-1-3 text" style="width: 31%; padding-right: 8px; padding-left: 13px;">
-      Fossil fuel (coal, oil and gas) produce large quantities of carbon dioxide when burned. Carbon emissions trap heat in the atmosphere and lead to climate change. Replacing these energy sources with renewable energy will be crucial towards the mitigation of climate change.
+        <!-- Visualization Containers -->
+        <div class="visualization" id="vis2"></div>
+        <div class="visualization" id="vis1"></div>
     </div>
 
-    <a class="pure-u-1-1 text" style="padding-top: 20px;" href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Renewable_energy_sources" type="" target="_blank">source: eurostat</a>
-  </div>
+    <!-- Visualization Scripts -->
+    <script>
+        const specVis1 = "choropleth_malaria.vg.json";
+        const specVis2 = "scatterplot_interactive.vg.json";
 
-  <!-- pure grid group -->
-  <div class="pure-g">
-    <div class="pure-u-2-3">
-        <div id="chart2"  class="vis-container"></div>
-    </div>
-    <div class="pure-u-1-3">
-      <div class="text description-right">
-      
-        <p>Use of renewable energy has been one of the greatest effort by the EU as it aims to be <b>climate-neutral by 2050</b> - an economy with net-zero greenhouse gas emissions.</p>
-
-        <p>Each type of renewable energy converts other type of energy into electricity in diffeent ways. <b>Hydropower</b> generates electricity from the potential and kinetic energy of water in hydroelectric plants. <b>Wind energy</b> converts the kinetic energy of wind into electricity in wind turbines. <b>Solar energy</b> involves solar thermal energy (radiation exploited for solar heat) and solar photo-voltaic for electricity production. <b>Biofuels</b> is combusted and generates electricity the same way as traditional fuel combustion. However, the generation of some renewable energy is highly dependent on the geographical advantages of a nation (for example hydropower and wind). </p>
-
-        <p>Nuclear energy is not renewable but recyclable, zero-emission, small land footprint and produces minimal wastes. Nuclear energy can supply the same amount of energy with a tiny fraction of waste compared to fossil fuel which is extremely clean and efficient .</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- pure grid group -->
-  <div class="pure-g" style="padding-top: 40px;">
-    <div class="pure-u-2-3">
-        <div id="chart7"  class="vis-container"></div>
-    </div>
-    <div class="pure-u-1-3" >
-      <div id="chart5"  class="vis-container"></div>
-    </div>
-  </div>
-
-
-  <!-- pure grid group -->
-  <div class="pure-g" style="padding-top: 40px;">
-    <div class="pure-u-1-3 text" style="width: 33%; padding-right: 1%;">
-      <b>Biofuels</b> are fuels derived directly or indirectly from biomass. Biofuels used for non-energy purposes are excluded from the scope of energy statistics (for example wood used for construction or as furniture, biolubricant for engine lubrication and biobitumen used for road surface). Biofuels can be split up into Solid biofuels, Liquid biofuels and Gas biofuels.
-    </div>
-    <div class="pure-u-1-3 text" style="width: 32%; padding-right: 1%;">
-      <b>Solid biofuels</b> covers solid organic, non-fossil material of biological origin which may be used as fuel for heat production or electricity generation. Biogas is a gas composed principally of methane and carbon dioxide produced by anaerobic digestion of biomass or by thermal processes from biomass, including biomass in waste.
-    </div>
-
-    <div class="pure-u-1-3 text" style="width: 33%;">
-    <b>Liquid biofuels</b> includes all liquid fuels of natural origin (e.g. produced from biomass and/or the biodegradable fraction of waste), suitable to be blended with or replace liquid fuels from fossil origin. In energy statistics, liquid biofuels is a product aggregate equal to the sum of biogasoline, biodiesels, bio jet kerosene and other liquid biofuels.
-    </div>
-
-    <a class="pure-u-1-1 text" style="padding-top: 20px;" href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Biofuels#:~:text=Liquid%20biofuels%20includes%20all%20liquid,liquid%20fuels%20from%20fossil%20origin." type="" target="_blank">source: eurostat</a>
-  </div>
-
-
-  <!-- pure grid group -->
-  <div class="pure-g" style="padding-top: 20px;">
-    <div class="pure-u-1-1">
-        <div id="chart4"  class="vis-container"></div>
-    </div>
-  </div>
-  
-
-  <div >
-    <p>Visualisation by <b> Lim Kuan Liang (32449534) </b> for FIT3179 A2 2022. </p>
-    <p> Data taken from <a href="https://ec.europa.eu/eurostat/data/database" target="_blank">Eurostat</href></a>
-    </p>
-  </div>
-    
-
-
-</div>
-<script type="text/javascript">
-
-  var spec1 = "./js/1_shareOfEnergyFromRenewableSources_chloropethmap.vg.json";
-  vegaEmbed('#chart1', spec1, {"actions": false}).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-
-  var spec2 = "./js/2_electricityProductionCapacities_isotypedotplot.vg.json"
-  vegaEmbed('#chart2', spec2, {"actions": false}).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-
-  var spec4 = "./js/4_liquidBioFuel_stackbar.vg.json"
-  vegaEmbed('#chart4', spec4, {"actions": false}).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-
-  var spec5 = "./js/5_nuclearEnergy_psmap.vg.json"
-  vegaEmbed('#chart5', spec5, {"actions": false}).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-
-  var spec7 = "./js/7_consumptionOfRE_areachart.vg.json"
-  vegaEmbed('#chart7', spec7, {"actions": false}).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-
-  var spec8 = "./js/8_greenhousegas_line.vg.json"
-  vegaEmbed('#chart8', spec8, {"actions": false}).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-
-
-
-
-</script>
-
+        vegaEmbed('#vis1', specVis1, { "actions": false });
+        vegaEmbed('#vis2', specVis2, { "actions": false })
+            .then(result => {
+                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+            })
+            .catch(console.error);
+    </script>
 </body>
+
 </html>
