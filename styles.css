@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 40px; 
+    padding: 40px;
     background-color: #f4f4f4;
 }
 
@@ -14,8 +14,10 @@ body {
 h1 {
     font-size: 28px;
     margin-bottom: 10px;
-    font-family: 'Raleway', sans-serif; /* Custom font for the title */
-    color: #0077cc; /* Accent color for the title */
+    font-family: 'Raleway', sans-serif;
+    /* Custom font for the title */
+    color: #0077cc;
+    /* Accent color for the title */
 }
 
 .description-container {
@@ -31,7 +33,8 @@ p.description {
 }
 
 .highlight {
-    color: #0077cc; /* Accent color for highlighted words */
+    color: #0077cc;
+    /* Accent color for highlighted words */
     font-weight: bold;
 }
 
@@ -42,4 +45,23 @@ p.description {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #0077cc;
+    /* Accent color for the subheader */
+}
+
+.visualization-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #7a7a7a;
+}
+
+.visualization-section {
+    margin-bottom: 60px;
+    /* Add spacing between visualization sections */
 }

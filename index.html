@@ -17,13 +17,36 @@
 
 <body>
     <div class="container">
-        <!-- Title and Description -->
+        <!-- Title and Main Description -->
         <h1>Influenza Visualization</h1>
-        <p>This visualization provides insights into influenza cases by region and their impact on the population.</p>
+        <div class="description-container">
+            <p class="description">This visualization offers a comprehensive understanding of the <span
+                    class="highlight">influenza cases</span> spread across different regions. It sheds light on the
+                patterns, intensities, and fluctuations in cases, ensuring a better grasp on the disease's impact. By
+                analyzing the data, one can identify potential <span class="highlight">hotspots</span>, the
+                effectiveness of preventive measures, and the overall toll on communities. This aids in formulating
+                informed strategies and public health policies.</p>
 
-        <!-- Visualization Containers -->
-        <div class="visualization" id="vis2"></div>
-        <div class="visualization" id="vis1"></div>
+            <!-- First Visualization: Scatter Plot -->
+            <div class="visualization-section">
+                <h2>Scatter Plot Analysis</h2>
+                <p class="visualization-description">This scatter plot visualizes the relationship between the total
+                    number of deaths, total cases, and the overall population for influenza cases per country in 2017.
+                    Through this, one can discern patterns and correlations, providing valuable insights into the
+                    severity and spread of influenza in various nations.</p>
+                <div class="visualization" id="vis1"></div>
+            </div>
+
+            <!-- Second Visualization: Choropleth Map -->
+            <div class="visualization-section">
+                <h2>Choropleth Map Overview</h2>
+                <p class="visualization-description">The choropleth map displays influenza cases per 10,000 population,
+                    offering a geographical perspective on the disease's prevalence. This visualization allows for an
+                    easy comparison between regions, highlighting areas with a higher incidence of cases and those
+                    relatively unaffected.</p>
+                <div class="visualization" id="vis2"></div>
+            </div>
+        </div>
     </div>
 
     <!-- Visualization Scripts -->
