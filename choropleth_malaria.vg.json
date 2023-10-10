@@ -1,6 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "autosize": { "type": "fit", "contains": "padding" }, 
+  "width": 600,
+  "height": 400,
   "title": {
       "text": "Influenza Cases per 10,000 population (2017)",
       "fontSize": 16,

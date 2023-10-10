@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "autosize": { "type": "fit", "contains": "padding" },
   "config": {
     "font": "Arial",
     "title": {
@@ -25,6 +24,8 @@
         "titleFont": "Arial"
     }
   },
+  "width": 600,
+  "height": 400,
   "title": "Influenza Cases per Country (2017)",
   "data": {
     "url": "Malaria.csv"
