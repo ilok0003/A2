@@ -34,8 +34,7 @@
               "url": "Malaria.csv"
             },
             "key": "Country",
-            "fields": ["Total_cases", "Population"],
-            "default": {"Total_cases": 0, "Population": 0}
+            "fields": ["Total_cases", "Population"]
           }
         },
         {"calculate": "datum.Total_cases/datum.Population*10000", "as": "Total cases per 10,000 population"}
