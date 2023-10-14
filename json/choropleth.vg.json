@@ -131,7 +131,7 @@
     },
     {
       "data": {
-        "url": "../data/per-capita-energy-use.csv"
+        "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/per-capita-energy-use.csv"
       },
       "transform": [
         {

@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-        "url": "../data/per-capita-energy-source-stacked-continent.csv"
+        "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/per-capita-energy-source-stacked-continent.csv"
     },
     "params": [
         {
