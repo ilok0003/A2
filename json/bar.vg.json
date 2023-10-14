@@ -1,42 +1,160 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Opposition to Nuclear Energy (2011)",
-    "description": "Percentage of respondents opposed to nuclear energy by country, as per Ipsos MORI (2011).",
-    "data": {
-      "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/public-opposition-to-nuclear-energy-production.csv"
-    },
-    "mark": {
-      "type": "bar",
-      "tooltip": true
-    },
-    "encoding": {
-      "x": {
-        "field": "Entity",
-        "type": "ordinal",
-        "title": "Country",
-        "axis": {"labelAngle": -45}
-      },
-      "y": {
-        "field": "Opposed",
-        "type": "quantitative",
-        "title": "Percentage Opposed to Nuclear Energy"
-      },
-      "color": {
-        "condition": {
-          "test": "datum.Entity === 'World'",
-          "value": "red"
-        },
-        "value": "steelblue"
-      },
-      "tooltip": [{
-        "field": "Entity",
-        "type": "ordinal",
-        "title": "Country"
-      },{
-        "field": "Opposed",
-        "type": "quantitative",
-        "title": "Percentage Opposed"
-      }]
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Opposition to Nuclear Energy (2011)",
+  "description": "Percentage of respondents opposed to nuclear energy by country, as per Ipsos MORI (2011).",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/public-opposition-to-nuclear-energy-production.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.Entity !== 'World'"
     }
-  }
-  
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "tooltip": true
+      },
+      "encoding": {
+        "x": {
+          "field": "Entity",
+          "type": "ordinal",
+          "title": "Country",
+          "axis": {
+            "labelAngle": -45
+          },
+          "sort": {
+            "field": "Opposed",
+            "op": "mean",
+            "order": "descending"
+          }
+        },
+        "y": {
+          "field": "Opposed",
+          "type": "quantitative",
+          "title": "Opposed to Nuclear Energy (%)"
+        },
+        "color": {
+          "value": "#4C78A8"
+        },
+        "tooltip": [
+          {
+            "field": "Entity",
+            "type": "ordinal",
+            "title": "Country"
+          },
+          {
+            "field": "Opposed",
+            "type": "quantitative",
+            "title": "Percentage Opposed"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/public-opposition-to-nuclear-energy-production.csv",
+        "format": {
+          "type": "csv"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.Entity === 'World'"
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "color": "#F58518",
+        "strokeWidth": 2,
+        "tooltip": true
+      },
+      "encoding": {
+        "y": {
+          "field": "Opposed",
+          "type": "quantitative"
+        },
+        "tooltip": {
+          "field": "Opposed",
+          "type": "quantitative",
+          "title": "Global Average"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/public-opposition-to-nuclear-energy-production.csv",
+        "format": {
+          "type": "csv"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.Entity === 'World'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 300,
+        "dy": -10,
+        "color": "gray"
+      },
+      "encoding": {
+        "y": {
+          "field": "Opposed",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Global Average (%): "
+        },
+        "x": {
+          "value": 0,
+          "axis": {
+            "title": "Country"
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/public-opposition-to-nuclear-energy-production.csv",
+        "format": {
+          "type": "csv"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.Entity === 'World'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 405,
+        "dy": -10,
+        "color": "gray"
+      },
+      "encoding": {
+        "y": {
+          "field": "Opposed",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "Opposed",
+          "type": "quantitative",
+          "format": ".0f"
+        },
+        "x": {
+          "value": 0,
+          "axis": {
+            "title": "Country"
+          }
+        }
+      }
+    }
+  ]
+}

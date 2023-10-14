@@ -1,0 +1,156 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "url": "../data/energy-use-per-capita-vs-share-of-population-in-extreme-poverty-cleaned.csv"
+    },
+    "width": 600,
+    "height": 400,
+    "layer": [
+        {
+            "mark": "circle",
+            "encoding": {
+                "x": {
+                    "field": "Energy",
+                    "type": "quantitative",
+                    "title": "Energy",
+                    "scale": {
+                        "domain": [
+                            0,
+                            70000
+                        ]
+                    }
+                },
+                "y": {
+                    "field": "Poverty",
+                    "type": "quantitative",
+                    "title": "Share in extreme Poverty (%)",
+                    "scale": {
+                        "zero": true,
+                        "domain": [
+                            0,
+                            24
+                        ]
+                    }
+                },
+                "size": {
+                    "field": "Population",
+                    "type": "quantitative",
+                    "title": "Population",
+                    "scale": {
+                        "range": [
+                            0,
+                            2000
+                        ]
+                    },
+                    "legend": {
+                        "title": "Population",
+                        "format": ".2s",
+                        "orient": "top-right"
+                    }
+                },
+                "color": {
+                    "field": "Continent",
+                    "type": "nominal",
+                    "title": "Continent (click to select)",
+                    "scale": {
+                        "domain": [
+                            "Africa",
+                            "Asia",
+                            "Europe",
+                            "North America",
+                            "South America",
+                            "Oceania"
+                        ],
+                        "range": [
+                            "#5AA9E6",
+                            "#FFBC42",
+                            "#D138BF",
+                            "#70AF85",
+                            "#D98282",
+                            "#907FA4"
+                        ]
+                    },
+                    "legend": {
+                        "orient": "top"
+                    }
+                },
+                "tooltip": [
+                    {
+                        "field": "Country",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "Energy",
+                        "type": "quantitative"
+                    },
+                    {
+                        "field": "Poverty",
+                        "type": "quantitative"
+                    },
+                    {
+                        "field": "Population",
+                        "type": "quantitative"
+                    },
+                    {
+                        "field": "Continent",
+                        "type": "nominal"
+                    }
+                ],
+                "opacity": {
+                    "condition": {
+                        "selection": "continent",
+                        "value": 1
+                    },
+                    "value": 0.2
+                }
+            },
+            "title": "Energy use per capita vs. share in extreme poverty (2014)",
+            "selection": {
+                "brush": {
+                    "type": "interval",
+                    "bind": "scales"
+                },
+                "continent": {
+                    "type": "multi",
+                    "fields": [
+                        "Continent"
+                    ],
+                    "bind": "legend"
+                }
+            }
+        },
+        {
+            "transform": [
+                {
+                    "filter": {
+                        "field": "Country",
+                        "oneOf": [
+                            "China",
+                            "India",
+                            "United States"
+                        ]
+                    }
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "dy": -10,
+                "align": "center"
+            },
+            "encoding": {
+                "x": {
+                    "field": "Energy",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "Poverty",
+                    "type": "quantitative"
+                },
+                "text": {
+                    "field": "Country",
+                    "type": "nominal"
+                }
+            }
+        }
+    ]
+}
