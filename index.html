@@ -9,59 +9,65 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Make sure the path to your styles is correct -->
 </head>
 
 <body>
 
+<div class="content-container">
     <h1>Energy Consumption Worldwide</h1>
     <p>A visualization representation of energy consumption patterns across different regions of the world.</p>
 
     <!-- Chloropleth Map Visualization -->
-    <div id="chloropleth"></div>
+    <div class="viz-container">
+        <div id="chloropleth" class="viz"></div>
+    </div>
+    <p>This choropleth map showcases the energy consumption per capita, adjustable across the years from 1985 to 2021.</p>
 
     <!-- Visualization 2 with placeholder on right -->
     <div class="viz-container">
         <div id="viz2" class="viz"></div>
         <div class="placeholder"></div>
     </div>
+    <p>This bubble chart represents the relationship between energy use per capita and the share in extreme poverty for the year 2014, with the bubble size indicating population size.</p>
 
     <!-- Visualization 3 with placeholder on left -->
     <div class="viz-container">
         <div class="placeholder"></div>
         <div id="viz3" class="viz"></div>
     </div>
+    <p>The stacked area chart below depicts per capita energy source by year, categorizing them into fossil, nuclear, and renewables.</p>
 
     <!-- Visualization 4 with placeholder on right -->
     <div class="viz-container">
         <div id="viz4" class="viz"></div>
         <div class="placeholder"></div>
     </div>
+    <p>The bar chart visualizes opposition to nuclear energy globally, with an average opposition rate of 62%.</p>
 
     <!-- Visualization 5 with placeholder on left -->
     <div class="viz-container">
         <div class="placeholder"></div>
         <div id="viz5" class="viz"></div>
     </div>
+    <p>This bubble chart illustrates the correlation between per capita CO2 emissions and per capita energy consumption for the year 2021, with bubble sizes corresponding to population figures.</p>
 
     <script>
         // Assuming the Vega visualizations are defined elsewhere and are available.
-        // For the purpose of this example, I'll use placeholders.
 
-        const chloroplethSpec = "json/choropleth.vg.json";  // your chloropleth Vega specification here
-        const viz2Spec = "json/bubble.vg.json";        // your second Vega visualization spec here
-        const viz3Spec = "json/stacked_area.vg.json";        // your third Vega visualization spec here
-        const viz4Spec = "json/bar.vg.json";        // your fourth Vega visualization spec here
-        const viz5Spec = "json/bubble2.vg.json";        // your fifth Vega visualization spec here
+        const chloroplethSpec = "json/choropleth.vg.json";
+        const viz2Spec = "json/bubble.vg.json";
+        const viz3Spec = "json/stacked_area.vg.json";
+        const viz4Spec = "json/bar.vg.json";
+        const viz5Spec = "json/bubble2.vg.json";
 
         vegaEmbed('#chloropleth', chloroplethSpec);
         vegaEmbed('#viz2', viz2Spec);
         vegaEmbed('#viz3', viz3Spec);
         vegaEmbed('#viz4', viz4Spec);
         vegaEmbed('#viz5', viz5Spec);
-
     </script>
+</div>
 
 </body>
-
 </html>
