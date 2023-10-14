@@ -1,0 +1,68 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 700,
+    "height": 500,
+    "data": {
+        "url": "https://raw.githubusercontent.com/ilok0003/A2/main/json/renewable-electricity-per-capita.csv"
+    },
+    "transform": [
+        {
+            "window": [
+                {
+                    "op": "rank",
+                    "as": "rank"
+                }
+            ],
+            "sort": [
+                {
+                    "field": "Renewable electricity per capita (kWh)",
+                    "order": "descending"
+                }
+            ],
+            "groupby": [
+                "year"
+            ]
+        },
+        {
+            "filter": "(datum.rank <= 10)"
+        }
+    ],
+    "mark": {
+        "type": "line",
+        "point": {
+            "size": 150
+        }
+    },
+    "encoding": {
+        "x": {
+            "field": "year",
+            "type": "ordinal",
+            "axis": {
+                "labelAngle": 0
+            }
+        },
+        "y": {
+            "field": "rank",
+            "type": "quantitative",
+            "sort": "descending"
+        },
+        "color": {
+            "field": "Entity",
+            "type": "nominal"
+        },
+        "detail": {
+            "field": "Entity",
+            "type": "nominal"
+        },
+        "tooltip": [
+            {
+                "field": "Entity",
+                "type": "nominal"
+            },
+            {
+                "field": "Renewable electricity per capita (kWh)",
+                "type": "quantitative"
+            }
+        ]
+    }
+}
