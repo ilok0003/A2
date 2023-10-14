@@ -3,7 +3,7 @@
     "width": 700,
     "height": 500,
     "data": {
-        "url": "https://raw.githubusercontent.com/ilok0003/A2/main/json/renewable-electricity-per-capita.csv"
+        "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/renewable-electricity-per-capita.csv"
     },
     "transform": [
         {
@@ -20,11 +20,11 @@
                 }
             ],
             "groupby": [
-                "year"
+                "Year"
             ]
         },
         {
-            "filter": "(datum.rank <= 10)"
+            "filter": "(datum.rank <= 20)"
         }
     ],
     "mark": {
@@ -35,7 +35,7 @@
     },
     "encoding": {
         "x": {
-            "field": "year",
+            "field": "Year",
             "type": "ordinal",
             "axis": {
                 "labelAngle": 0
