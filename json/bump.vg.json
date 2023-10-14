@@ -24,8 +24,12 @@
             ]
         },
         {
-            "filter": "(datum.rank <= 20)"
+            "filter": "(datum.rank <= 10)"
+        },
+        {
+            "filter": "(datum.Year >= 2010)"
         }
+
     ],
     "mark": {
         "type": "line",
