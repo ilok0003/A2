@@ -1,90 +1,35 @@
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    margin: 0;
-    padding: 40px;
-    background-color: #f9f9f9; /* A lighter shade for background */
-    line-height: 1.6; /* Improving readability */
-    color: #4a4a4a; /* Darker text for better contrast */
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+/* Existing Styles */
+.viz-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff; /* Container background */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
-    border-radius: 8px; /* Rounded edges for modern touch */
-    overflow: hidden; /* In case any child elements reach the edge */
-}
-
-h1, h2 {
-    color: #2c3e50; /* A more subdued, professional color */
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center; /* Centered headers */
-}
-
-h1 {
-    font-size: 32px; /* Slightly larger for better prominence */
-    font-weight: 500;
-    margin-top: 0;
-}
-
-h2 {
-    font-size: 24px;
-    font-weight: 500;
-    border-bottom: 2px solid #ecf0f1; /* Subtle line below subheadings */
-    padding-bottom: 10px;
-}
-
-.highlight {
-    color: #3498db; /* A more vibrant highlight color */
-    font-weight: bold;
-}
-
-.main-description, .description, .visualization-description {
-    font-size: 15px; /* Increased for readability */
-    color: #7f8c8d; /* A softer color for description */
-    margin-bottom: 20px;
-    text-align: justify; /* Full justification for a cleaner look */
-}
-
-.main-description {
-    font-size: 16px;
-    margin-bottom: 40px;
-    border-top: 1px solid #ecf0f1; /* Line at the top for separation */
-    padding-top: 20px;
-}
-
-.visualization-section {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    margin-bottom: 60px;
-    border-bottom: 1px solid #ecf0f1; /* Line below each section for separation */
-    padding-bottom: 40px;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.description-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 40px;
-}
-
-.visualization {
+.viz-container .viz {
     flex: 2;
-    width: 100%;
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    border-radius: 8px; /* Consistent rounded edges */
+}
+
+.viz-container .placeholder {
+    flex: 1;
+}
+
+/* New/Updated Styles */
+body {
+    font-family: 'Lato', sans-serif; /* Apply the Lato font to the entire body */
+    background-color: #f4f4f4; /* Light gray background for the entire page */
+}
+
+/* Container for all content, centering and setting its width */
+.content-container {
+    width: 1500px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background for the content */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for a floating effect */
+}
+
+/* Adjusting the main visualization container styles to incorporate the new outer container */
+.viz-container {
+    padding: 20px; /* Add some padding around visualizations for better spacing */
 }
