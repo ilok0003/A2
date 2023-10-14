@@ -71,7 +71,7 @@
                         ]
                     },
                     "legend": {
-                        "orient": "top"
+                        "orient": "top-left"
                     }
                 },
                 "tooltip": [
