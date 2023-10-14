@@ -1,101 +1,177 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 700,
+  "width": 1000,
   "height": 500,
   "title": "Renewable Electricity per Capita by Continent",
   "data": {
-      "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/renewable-electricity-per-capita.csv"
+    "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/renewable-electricity-per-capita.csv"
   },
-  "transform": [{
+  "transform": [
+    {
       "filter": "datum.Year > 1975"
-  }],
+    }
+  ],
+  "config": {
+    "title": {
+      "font": "Verdana",
+      "fontSize": 20
+    },
+    "axis": {
+      "labelFont": "Verdana",
+      "titleFont": "Verdana"
+    },
+    "legend": {
+      "labelFont": "Verdana",
+      "titleFont": "Verdana"
+    },
+    "text": {
+      "font": "Verdana"
+    }
+  },
   "vconcat": [
-      {
-          "width": 700,
-          "height": 450,
-          "layer": [
-              {
-                  "mark": {
-                      "type": "line",
-                      "point": {
-                          "size": 20
-                      }
-                  },
-                  "transform": [
-                      {
-                          "filter": {"selection": "year_brush"}
-                      }
-                  ],
-                  "encoding": {
-                      "x": {
-                          "field": "Year",
-                          "type": "ordinal",
-                          "title": "Year"
-                      },
-                      "y": {
-                          "field": "Renewable electricity per capita (kWh)",
-                          "type": "quantitative"
-                      },
-                      "color": {
-                          "field": "Entity",
-                          "type": "nominal",
-                          "title": "Continent",
-                          "scale": {
-                              "domain": ["Africa", "Asia", "Europe", "North America", "South America", "Oceania"],
-                              "range": ["#5AA9E6", "#FFBC42", "#D138BF", "#70AF85", "#D98282", "#907FA4"]
-                          },
-                          "legend": {
-                              "orient": "top"
-                          }
-                      },
-                      "detail": {
-                          "field": "Entity",
-                          "type": "nominal"
-                      }
-                  }
+    {
+      "width": 800,
+      "height": 450,
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "point": {
+              "size": 20
+            }
+          },
+          "transform": [
+            {
+              "filter": {
+                "selection": "year_brush"
+              }
+            }
+          ],
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "type": "ordinal",
+              "title": "Year"
+            },
+            "y": {
+              "field": "Renewable electricity per capita (kWh)",
+              "type": "quantitative"
+            },
+            "color": {
+              "field": "Entity",
+              "type": "nominal",
+              "title": "Continent",
+              "scale": {
+                "domain": [
+                  "Africa",
+                  "Asia",
+                  "Europe",
+                  "North America",
+                  "South America",
+                  "Oceania"
+                ],
+                "range": [
+                  "#5AA9E6",
+                  "#FFBC42",
+                  "#D138BF",
+                  "#70AF85",
+                  "#D98282",
+                  "#907FA4"
+                ]
               },
+              "legend": {
+                "orient": "top"
+              }
+            },
+            "detail": {
+              "field": "Entity",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "mark": "rule",
+          "data": {
+            "values": [
               {
-                  "mark": "rule",
-                  "data": {
-                      "values": [
-                          {
-                              "event": "Paris Agreement",
-                              "year": "2015"
-                          }
-                      ]
-                  },
-                  "encoding": {
-                      "x": {
-                          "field": "year",
-                          "type": "ordinal"
-                      },
-                      "color": {
-                          "value": "black"
-                      },
-                      "size": {
-                          "value": 2
-                      }
-                  }
+                "event": "Paris Agreement",
+                "year": "2015"
               }
-          ]
-      },
-      {
-          "width": 700,
-          "height": 50,
-          "mark": "bar",
-          "selection": {
-              "year_brush": {
-                  "type": "interval",
-                  "encodings": ["x"]
-              }
+            ]
           },
           "encoding": {
-              "x": {
-                  "field": "Year",
-                  "type": "ordinal",
-                  "axis": {"title": "Year"}
-              }
+            "x": {
+              "field": "year",
+              "type": "ordinal"
+            },
+            "color": {
+              "value": "black"
+            },
+            "size": {
+              "value": 2
+            }
           }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "bottom",
+            "dx": -350,
+            "dy": -5,
+            "angle":270
+          },
+          "data": {
+            "values": [
+              {
+                "year": "2015",
+                "text": "Paris Agreement (2015)"
+              }
+            ]
+          },
+          "encoding": {
+            "x": {
+              "field": "year",
+              "type": "ordinal"
+            },
+            "y": {
+              "value": 0
+            },
+            "text": {
+              "field": "text"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 800,
+      "height": 30,
+      "mark": "bar",
+      "selection": {
+        "year_brush": {
+          "type": "interval",
+          "encodings": [
+            "x"
+          ]
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "axis": {
+            "title": "Click and drag to select a year range"
+          }
+        },
+        "color": {
+          "condition": {
+            "selection": "year_brush",
+            "value": "darkgray"
+          },
+          "value": "lightgray"
+        }
       }
+    }
   ]
 }
