@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Opposition to Nuclear Energy (2011)",
+    "description": "Percentage of respondents opposed to nuclear energy by country, as per Ipsos MORI (2011).",
+    "data": {
+      "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/public-opposition-to-nuclear-energy-production.csv"
+    },
+    "mark": {
+      "type": "bar",
+      "tooltip": true
+    },
+    "encoding": {
+      "x": {
+        "field": "Entity",
+        "type": "ordinal",
+        "title": "Country",
+        "axis": {"labelAngle": -45}
+      },
+      "y": {
+        "field": "Opposed",
+        "type": "quantitative",
+        "title": "Percentage Opposed to Nuclear Energy"
+      },
+      "color": {
+        "condition": {
+          "test": "datum.Entity === 'World'",
+          "value": "red"
+        },
+        "value": "steelblue"
+      },
+      "tooltip": [{
+        "field": "Entity",
+        "type": "ordinal",
+        "title": "Country"
+      },{
+        "field": "Opposed",
+        "type": "quantitative",
+        "title": "Percentage Opposed"
+      }]
+    }
+  }
+  

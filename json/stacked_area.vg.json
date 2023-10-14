@@ -29,7 +29,7 @@
     }
   ],
   "data": {
-    "url": "../data/per-capita-energy-source-stacked-continent.csv"
+    "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/per-capita-energy-source-stacked-continent.csv"
   },
   "encoding": {
     "x": {
@@ -60,7 +60,7 @@
         "y": {
           "field": "Value",
           "type": "quantitative",
-          "title": "Percentage of Total Energy Source",
+          "title": "Per capita energy source (kWh per capita)",
           "axis": {
             "grid": false
           }
@@ -68,7 +68,7 @@
         "color": {
           "field": "Source",
           "type": "nominal",
-          "title": "Energy Source",
+          "title": "Energy Source (click to select)",
           "scale": {
             "domain": [
               "Fossil",
@@ -76,9 +76,9 @@
               "Renewables"
             ],
             "range": [
-              "#d62728",
-              "#1f77b4",
-              "#2ca02c"
+              "#A8A495",
+              "#383E42",
+              "#668C4A"
             ]
           },
           "legend": {
@@ -106,7 +106,7 @@
           {
             "field": "Value",
             "type": "quantitative",
-            "title": "Energy Source Percentage",
+            "title": "Energy (kWh per capita)",
             "format": ",.0f"
           }
         ]
@@ -114,6 +114,11 @@
       "transform": [
         {
           "filter": "datum.Continent == continent_filter"
+        },
+        {
+          "filter": {
+            "param": "source_selection"
+          }
         }
       ]
     }
@@ -126,5 +131,3 @@
     }
   }
 }
-
-
