@@ -1,0 +1,1219 @@
+﻿Continent,Year,Source,Value
+Africa,1965,Fossil,2100.505
+Africa,1965,Nuclear,0
+Africa,1965,Renewables,127.91771
+Africa,1966,Fossil,2136.364
+Africa,1966,Nuclear,0
+Africa,1966,Renewables,139.12254
+Africa,1967,Fossil,2099.7725
+Africa,1967,Nuclear,0
+Africa,1967,Renewables,141.5766
+Africa,1968,Fossil,2145.9302
+Africa,1968,Nuclear,0
+Africa,1968,Renewables,161.39375
+Africa,1969,Fossil,2126.871
+Africa,1969,Nuclear,0
+Africa,1969,Renewables,183.53688
+Africa,1970,Fossil,2220.0889
+Africa,1970,Nuclear,0
+Africa,1970,Renewables,223.56758
+Africa,1971,Fossil,2334.7239
+Africa,1971,Nuclear,0
+Africa,1971,Renewables,206.47203
+Africa,1972,Fossil,2389.0298
+Africa,1972,Nuclear,0
+Africa,1972,Renewables,229.00676
+Africa,1973,Fossil,2525.8975
+Africa,1973,Nuclear,0
+Africa,1973,Renewables,235.90248
+Africa,1974,Fossil,2560.9014
+Africa,1974,Nuclear,0
+Africa,1974,Renewables,261.10275
+Africa,1975,Fossil,2640.0945
+Africa,1975,Nuclear,0
+Africa,1975,Renewables,268.4201
+Africa,1976,Fossil,2780.9941
+Africa,1976,Nuclear,0
+Africa,1976,Renewables,289.09085
+Africa,1977,Fossil,2841.5732
+Africa,1977,Nuclear,0
+Africa,1977,Renewables,308.83777
+Africa,1978,Fossil,2877.135
+Africa,1978,Nuclear,0
+Africa,1978,Renewables,302.6684
+Africa,1979,Fossil,3049.865
+Africa,1979,Nuclear,0
+Africa,1979,Renewables,314.55762
+Africa,1980,Fossil,3215.9644
+Africa,1980,Nuclear,0
+Africa,1980,Renewables,298.0381
+Africa,1981,Fossil,3530.2383
+Africa,1981,Nuclear,0
+Africa,1981,Renewables,300.8455
+Africa,1982,Fossil,3671.4834
+Africa,1982,Nuclear,0
+Africa,1982,Renewables,292.26404
+Africa,1983,Fossil,3710.4407
+Africa,1983,Nuclear,0
+Africa,1983,Renewables,256.08322
+Africa,1984,Fossil,3711.4023
+Africa,1984,Nuclear,20.617537
+Africa,1984,Renewables,244.92314
+Africa,1985,Fossil,3731.3445
+Africa,1985,Nuclear,27.141745
+Africa,1985,Renewables,264.69916
+Africa,1986,Fossil,3678.9912
+Africa,1986,Nuclear,43.69594
+Africa,1986,Renewables,268.0142
+Africa,1987,Fossil,3724.4321
+Africa,1987,Nuclear,29.756077
+Africa,1987,Renewables,250.02135
+Africa,1988,Fossil,3855.0076
+Africa,1988,Nuclear,49.25306
+Africa,1988,Renewables,265.27042
+Africa,1989,Fossil,3742.3813
+Africa,1989,Nuclear,50.70058
+Africa,1989,Renewables,270.88193
+Africa,1990,Fossil,3779.73
+Africa,1990,Nuclear,37.56778
+Africa,1990,Renewables,269.1465
+Africa,1991,Fossil,3659.4187
+Africa,1991,Nuclear,39.610104
+Africa,1991,Renewables,277.6371
+Africa,1992,Fossil,3637.3347
+Africa,1992,Nuclear,39.22249
+Africa,1992,Renewables,258.54077
+Africa,1993,Fossil,3570.017
+Africa,1993,Nuclear,29.87225
+Africa,1993,Renewables,247.48167
+Africa,1994,Fossil,3595.591
+Africa,1994,Nuclear,38.946674
+Africa,1994,Renewables,244.78401
+Africa,1995,Fossil,3644.1704
+Africa,1995,Nuclear,44.270798
+Africa,1995,Renewables,248.36583
+Africa,1996,Fossil,3638.5918
+Africa,1996,Nuclear,44.982918
+Africa,1996,Renewables,253.37473
+Africa,1997,Fossil,3621.9602
+Africa,1997,Nuclear,47.142513
+Africa,1997,Renewables,253.74916
+Africa,1998,Fossil,3579.0522
+Africa,1998,Nuclear,49.48407
+Africa,1998,Renewables,259.61603
+Africa,1999,Fossil,3597.1724
+Africa,1999,Nuclear,45.582775
+Africa,1999,Renewables,268.28467
+Africa,2000,Fossil,3575.9673
+Africa,2000,Nuclear,45.077187
+Africa,2000,Renewables,281.23364
+Africa,2001,Fossil,3613.5637
+Africa,2001,Nuclear,35.996555
+Africa,2001,Renewables,293.37543
+Africa,2002,Fossil,3557.7563
+Africa,2002,Nuclear,39.025276
+Africa,2002,Renewables,299.01755
+Africa,2003,Fossil,3660.3315
+Africa,2003,Nuclear,39.93934
+Africa,2003,Renewables,283.20004
+Africa,2004,Fossil,3839.1663
+Africa,2004,Nuclear,40.8469
+Africa,2004,Renewables,291.29736
+Africa,2005,Fossil,3759.2332
+Africa,2005,Nuclear,33.44014
+Africa,2005,Renewables,286.83163
+Africa,2006,Fossil,3735.2168
+Africa,2006,Nuclear,28.763487
+Africa,2006,Renewables,290.34525
+Africa,2007,Fossil,3781.0037
+Africa,2007,Nuclear,31.447468
+Africa,2007,Renewables,289.6126
+Africa,2008,Fossil,3915.2478
+Africa,2008,Nuclear,34.9962
+Africa,2008,Renewables,286.5878
+Africa,2009,Fossil,3878.8787
+Africa,2009,Nuclear,33.377228
+Africa,2009,Renewables,286.00027
+Africa,2010,Fossil,3882.746
+Africa,2010,Nuclear,34.14246
+Africa,2010,Renewables,300.8988
+Africa,2011,Fossil,3810.795
+Africa,2011,Nuclear,31.545996
+Africa,2011,Renewables,301.39166
+Africa,2012,Fossil,3874.4211
+Africa,2012,Nuclear,30.71601
+Africa,2012,Renewables,294.98923
+Africa,2013,Fossil,3870.3032
+Africa,2013,Nuclear,32.355755
+Africa,2013,Renewables,303.77173
+Africa,2014,Fossil,3862.466
+Africa,2014,Nuclear,30.641243
+Africa,2014,Renewables,317.77902
+Africa,2015,Fossil,3862.6003
+Africa,2015,Nuclear,26.327713
+Africa,2015,Renewables,315.19714
+Africa,2016,Fossil,3867.859
+Africa,2016,Nuclear,31.328247
+Africa,2016,Renewables,306.7656
+Africa,2017,Fossil,3854.1597
+Africa,2017,Nuclear,28.690405
+Africa,2017,Renewables,324.96594
+Africa,2018,Fossil,3833.3167
+Africa,2018,Nuclear,22.697775
+Africa,2018,Renewables,339.21313
+Africa,2019,Fossil,3808.938
+Africa,2019,Nuclear,25.247028
+Africa,2019,Renewables,353.47128
+Africa,2020,Fossil,3483.574
+Africa,2020,Nuclear,18.341825
+Africa,2020,Renewables,368.9321
+Africa,2021,Fossil,3625.5051
+Africa,2021,Nuclear,22.259695
+Africa,2021,Renewables,379.35263
+Africa,2022,Fossil,3545.3096
+Africa,2022,Nuclear,17.710443
+Africa,2022,Renewables,380.82352
+Asia,1965,Fossil,2593.6575
+Asia,1965,Nuclear,0.037304364
+Asia,1965,Renewables,222.3872
+Asia,1966,Fossil,2756.053
+Asia,1966,Nuclear,0.8506556
+Asia,1966,Renewables,226.44109
+Asia,1967,Fossil,2844.5586
+Asia,1967,Nuclear,0.8949819
+Asia,1967,Renewables,206.75435
+Asia,1968,Fossil,2990.0364
+Asia,1968,Nuclear,1.4501771
+Asia,1968,Renewables,224.33261
+Asia,1969,Fossil,3336.7114
+Asia,1969,Nuclear,2.448705
+Asia,1969,Renewables,227.21378
+Asia,1970,Fossil,3708.8499
+Asia,1970,Nuclear,7.7907963
+Asia,1970,Renewables,227.32373
+Asia,1971,Fossil,3975.4124
+Asia,1971,Nuclear,11.672125
+Asia,1971,Renewables,242.87311
+Asia,1972,Fossil,4135.672
+Asia,1972,Nuclear,13.402955
+Asia,1972,Renewables,245.58287
+Asia,1973,Fossil,4417.263
+Asia,1973,Nuclear,14.87635
+Asia,1973,Renewables,223.31256
+Asia,1974,Fossil,4385.4126
+Asia,1974,Nuclear,26.632406
+Asia,1974,Renewables,248.8767
+Asia,1975,Fossil,4437.785
+Asia,1975,Nuclear,33.024063
+Asia,1975,Renewables,262.73886
+Asia,1976,Fossil,4602.0396
+Asia,1976,Nuclear,43.273533
+Asia,1976,Renewables,264.90094
+Asia,1977,Fossil,4844.678
+Asia,1977,Nuclear,38.756546
+Asia,1977,Renewables,255.56485
+Asia,1978,Fossil,5059.825
+Asia,1978,Nuclear,74.64973
+Asia,1978,Renewables,264.37238
+Asia,1979,Fossil,5224.946
+Asia,1979,Nuclear,90.313416
+Asia,1979,Renewables,281.43222
+Asia,1980,Fossil,5100.2217
+Asia,1980,Nuclear,104.221085
+Asia,1980,Renewables,297.12375
+Asia,1981,Fossil,5052.858
+Asia,1981,Nuclear,109.81348
+Asia,1981,Renewables,312.4645
+Asia,1982,Fossil,5047.5483
+Asia,1982,Nuclear,125.86182
+Asia,1982,Renewables,313.3928
+Asia,1983,Fossil,5200.0757
+Asia,1983,Nuclear,147.57088
+Asia,1983,Renewables,322.9857
+Asia,1984,Fossil,5509.3267
+Asia,1984,Nuclear,174.05548
+Asia,1984,Renewables,319.09097
+Asia,1985,Fossil,6306.246
+Asia,1985,Nuclear,209.86427
+Asia,1985,Renewables,368.45825
+Asia,1986,Fossil,6447.955
+Asia,1986,Nuclear,218.83534
+Asia,1986,Renewables,364.78372
+Asia,1987,Fossil,6660.039
+Asia,1987,Nuclear,253.90372
+Asia,1987,Renewables,370.04752
+Asia,1988,Fossil,6988.958
+Asia,1988,Nuclear,234.89563
+Asia,1988,Renewables,415.47903
+Asia,1989,Fossil,7191.7744
+Asia,1989,Nuclear,240.51364
+Asia,1989,Renewables,418.09866
+Asia,1990,Fossil,7324.175
+Asia,1990,Nuclear,253.77467
+Asia,1990,Renewables,426.91705
+Asia,1991,Fossil,7479.6816
+Asia,1991,Nuclear,266.1848
+Asia,1991,Renewables,424.13998
+Asia,1992,Fossil,7702.689
+Asia,1992,Nuclear,268.72247
+Asia,1992,Renewables,420.32178
+Asia,1993,Fossil,7855.5366
+Asia,1993,Nuclear,293.035
+Asia,1993,Renewables,457.6591
+Asia,1994,Fossil,8151.1943
+Asia,1994,Nuclear,307.99985
+Asia,1994,Renewables,450.61145
+Asia,1995,Fossil,8346.813
+Asia,1995,Nuclear,334.46332
+Asia,1995,Renewables,482.20346
+Asia,1996,Fossil,8606.345
+Asia,1996,Nuclear,348.16574
+Asia,1996,Renewables,472.4164
+Asia,1997,Fossil,8732.054
+Asia,1997,Nuclear,365.14474
+Asia,1997,Renewables,467.31732
+Asia,1998,Fossil,8583.624
+Asia,1998,Nuclear,374.7019
+Asia,1998,Renewables,488.76053
+Asia,1999,Fossil,8772.187
+Asia,1999,Nuclear,375.85275
+Asia,1999,Renewables,473.56464
+Asia,2000,Fossil,8999.97
+Asia,2000,Nuclear,381.39862
+Asia,2000,Renewables,483.60352
+Asia,2001,Fossil,9178.793
+Asia,2001,Nuclear,378.77988
+Asia,2001,Renewables,510.669
+Asia,2002,Fossil,9528.807
+Asia,2002,Nuclear,380.96222
+Asia,2002,Renewables,521.9941
+Asia,2003,Fossil,10240.069
+Asia,2003,Nuclear,332.54196
+Asia,2003,Renewables,534.11694
+Asia,2004,Fossil,11034.729
+Asia,2004,Nuclear,374.48102
+Asia,2004,Renewables,615.6142
+Asia,2005,Fossil,11760.506
+Asia,2005,Nuclear,383.8191
+Asia,2005,Renewables,632.00275
+Asia,2006,Fossil,12277.209
+Asia,2006,Nuclear,386.82913
+Asia,2006,Renewables,686.8414
+Asia,2007,Fossil,12919.018
+Asia,2007,Nuclear,364.43658
+Asia,2007,Renewables,715.27924
+Asia,2008,Fossil,13139.845
+Asia,2008,Nuclear,347.53857
+Asia,2008,Renewables,804.42926
+Asia,2009,Fossil,13278.283
+Asia,2009,Nuclear,357.13547
+Asia,2009,Renewables,791.18976
+Asia,2010,Fossil,13913.51
+Asia,2010,Nuclear,369.49133
+Asia,2010,Renewables,907.5819
+Asia,2011,Fossil,14559.163
+Asia,2011,Nuclear,301.2717
+Asia,2011,Renewables,931.39746
+Asia,2012,Fossil,14903.371
+Asia,2012,Nuclear,211.28625
+Asia,2012,Renewables,1049.5631
+Asia,2013,Fossil,15042.6875
+Asia,2013,Nuclear,210.11676
+Asia,2013,Renewables,1148.1871
+Asia,2014,Fossil,15192.178
+Asia,2014,Nuclear,222.64307
+Asia,2014,Renewables,1261.7352
+Asia,2015,Fossil,15245.994
+Asia,2015,Nuclear,246.94363
+Asia,2015,Renewables,1332.2017
+Asia,2016,Fossil,15270.59
+Asia,2016,Nuclear,271.86856
+Asia,2016,Renewables,1428.1138
+Asia,2017,Fossil,15550.419
+Asia,2017,Nuclear,282.58417
+Asia,2017,Renewables,1543.2957
+Asia,2018,Fossil,15864.545
+Asia,2018,Nuclear,311.2401
+Asia,2018,Renewables,1675.1049
+Asia,2019,Fossil,16029.353
+Asia,2019,Nuclear,358.30142
+Asia,2019,Renewables,1826.4906
+Asia,2020,Fossil,15667.932
+Asia,2020,Nuclear,359.77908
+Asia,2020,Renewables,1936.9718
+Asia,2021,Fossil,16303.895
+Asia,2021,Nuclear,390.67166
+Asia,2021,Renewables,2118.0044
+Asia,2022,Fossil,16428.768
+Asia,2022,Nuclear,406.62253
+Asia,2022,Renewables,2304.2197
+Europe,1965,Fossil,28415.236
+Europe,1965,Nuclear,96.258606
+Europe,1965,Renewables,1789.7991
+Europe,1966,Fossil,29263.027
+Europe,1966,Nuclear,123.51952
+Europe,1966,Renewables,1931.783
+Europe,1967,Fossil,30196.041
+Europe,1967,Nuclear,141.39503
+Europe,1967,Renewables,1903.3108
+Europe,1968,Fossil,31613.826
+Europe,1968,Nuclear,161.46959
+Europe,1968,Renewables,2013.0061
+Europe,1969,Fossil,33431.824
+Europe,1969,Nuclear,194.2802
+Europe,1969,Renewables,2027.703
+Europe,1970,Fossil,35240.676
+Europe,1970,Nuclear,211.36403
+Europe,1970,Renewables,2135.5222
+Europe,1971,Fossil,36257.152
+Europe,1971,Nuclear,241.44193
+Europe,1971,Renewables,2148.5168
+Europe,1972,Fossil,37753.14
+Europe,1972,Nuclear,329.80945
+Europe,1972,Renewables,2180.549
+Europe,1973,Fossil,39627.043
+Europe,1973,Nuclear,375.84915
+Europe,1973,Renewables,2194.089
+Europe,1974,Fossil,39601.98
+Europe,1974,Nuclear,458.50873
+Europe,1974,Renewables,2353.6228
+Europe,1975,Fossil,39710.418
+Europe,1975,Nuclear,608.51227
+Europe,1975,Renewables,2340.808
+Europe,1976,Fossil,41563.816
+Europe,1976,Nuclear,726.0414
+Europe,1976,Renewables,2226.9429
+Europe,1977,Fossil,42013.24
+Europe,1977,Nuclear,880.77466
+Europe,1977,Renewables,2608.1897
+Europe,1978,Fossil,43441.64
+Europe,1978,Nuclear,965.3782
+Europe,1978,Renewables,2689.38
+Europe,1979,Fossil,44629.074
+Europe,1979,Nuclear,1076.0988
+Europe,1979,Renewables,2785.8418
+Europe,1980,Fossil,43908.4
+Europe,1980,Nuclear,1269.0017
+Europe,1980,Renewables,2762.613
+Europe,1981,Fossil,42969.19
+Europe,1981,Nuclear,1655.919
+Europe,1981,Renewables,2781.436
+Europe,1982,Fossil,42616.176
+Europe,1982,Nuclear,1835.1294
+Europe,1982,Renewables,2691.6426
+Europe,1983,Fossil,42714.715
+Europe,1983,Nuclear,2128.5898
+Europe,1983,Renewables,2776.2576
+Europe,1984,Fossil,43317.75
+Europe,1984,Nuclear,2703.7373
+Europe,1984,Renewables,2874.1567
+Europe,1985,Fossil,41215.234
+Europe,1985,Nuclear,3184.4304
+Europe,1985,Renewables,2765.2075
+Europe,1986,Fossil,41726.46
+Europe,1986,Nuclear,3367.93
+Europe,1986,Renewables,2708.2734
+Europe,1987,Fossil,42273.465
+Europe,1987,Nuclear,3550.2896
+Europe,1987,Renewables,2840.1582
+Europe,1988,Fossil,42203.336
+Europe,1988,Nuclear,3881.3132
+Europe,1988,Renewables,2939.658
+Europe,1989,Fossil,42044.668
+Europe,1989,Nuclear,4032.917
+Europe,1989,Renewables,2670.805
+Europe,1990,Fossil,41945.766
+Europe,1990,Nuclear,3979.0815
+Europe,1990,Renewables,2731.2026
+Europe,1991,Fossil,41041.242
+Europe,1991,Nuclear,4065.5554
+Europe,1991,Renewables,2775.2021
+Europe,1992,Fossil,39089.668
+Europe,1992,Nuclear,4079.921
+Europe,1992,Renewables,2847.5388
+Europe,1993,Fossil,37203.19
+Europe,1993,Nuclear,4213.7915
+Europe,1993,Renewables,2917.0708
+Europe,1994,Fossil,35438.992
+Europe,1994,Nuclear,4093.409
+Europe,1994,Renewables,2971.8167
+Europe,1995,Fossil,35201.44
+Europe,1995,Nuclear,4195.335
+Europe,1995,Renewables,2998.1348
+Europe,1996,Fossil,35425.734
+Europe,1996,Nuclear,4445.3027
+Europe,1996,Renewables,2826.5044
+Europe,1997,Fossil,34557.832
+Europe,1997,Nuclear,4482.541
+Europe,1997,Renewables,2955.0725
+Europe,1998,Fossil,34703.06
+Europe,1998,Nuclear,4430.983
+Europe,1998,Renewables,3087.9836
+Europe,1999,Fossil,34490.168
+Europe,1999,Nuclear,4529.2236
+Europe,1999,Renewables,3167.0334
+Europe,2000,Fossil,34766.996
+Europe,2000,Nuclear,4597.0796
+Europe,2000,Renewables,3329.472
+Europe,2001,Fossil,35210.906
+Europe,2001,Nuclear,4720.3213
+Europe,2001,Renewables,3391.0295
+Europe,2002,Fossil,35118.402
+Europe,2002,Nuclear,4759.195
+Europe,2002,Renewables,3161.3528
+Europe,2003,Fossil,35908.543
+Europe,2003,Nuclear,4794.36
+Europe,2003,Renewables,3044.3262
+Europe,2004,Fossil,36128.684
+Europe,2004,Nuclear,4805.209
+Europe,2004,Renewables,3335.5405
+Europe,2005,Fossil,36159.8
+Europe,2005,Nuclear,4740.384
+Europe,2005,Renewables,3443.3586
+Europe,2006,Fossil,36706.965
+Europe,2006,Nuclear,4722.8076
+Europe,2006,Renewables,3489.5413
+Europe,2007,Fossil,36287.94
+Europe,2007,Nuclear,4503.1377
+Europe,2007,Renewables,3680.6443
+Europe,2008,Fossil,35884.48
+Europe,2008,Nuclear,4472.223
+Europe,2008,Renewables,3884.482
+Europe,2009,Fossil,33260.492
+Europe,2009,Nuclear,4252.8066
+Europe,2009,Renewables,4014.7566
+Europe,2010,Fossil,34383.883
+Europe,2010,Nuclear,4342.2993
+Europe,2010,Renewables,4323.4224
+Europe,2011,Fossil,33907.75
+Europe,2011,Nuclear,4288.837
+Europe,2011,Renewables,4233.829
+Europe,2012,Fossil,33422.234
+Europe,2012,Nuclear,4179.8394
+Europe,2012,Renewables,4671.887
+Europe,2013,Fossil,32636.775
+Europe,2013,Nuclear,4088.654
+Europe,2013,Renewables,5017.844
+Europe,2014,Fossil,31217.94
+Europe,2014,Nuclear,4109.321
+Europe,2014,Renewables,5125.5938
+Europe,2015,Fossil,31021.873
+Europe,2015,Nuclear,4045.0188
+Europe,2015,Renewables,5229.8335
+Europe,2016,Fossil,31490.72
+Europe,2016,Nuclear,3928.3967
+Europe,2016,Renewables,5340.091
+Europe,2017,Fossil,31707.62
+Europe,2017,Nuclear,3901.0188
+Europe,2017,Renewables,5385.113
+Europe,2018,Fossil,31832.111
+Europe,2018,Nuclear,3878.068
+Europe,2018,Renewables,5715.9253
+Europe,2019,Fossil,31062.229
+Europe,2019,Nuclear,3853.7354
+Europe,2019,Renewables,5816.3604
+Europe,2020,Fossil,28374.678
+Europe,2020,Nuclear,3537.6477
+Europe,2020,Renewables,6309.7847
+Europe,2021,Fossil,30266.775
+Europe,2021,Nuclear,3735.7673
+Europe,2021,Renewables,6412.611
+Europe,2022,Fossil,28721.068
+Europe,2022,Nuclear,3257.7788
+Europe,2022,Renewables,6345.0024
+North America,1965,Fossil,52763.68
+North America,1965,Nuclear,38.798218
+North America,1965,Renewables,3494.1838
+North America,1966,Fossil,54844.68
+North America,1966,Nuclear,57.517265
+North America,1966,Renewables,3597.0742
+North America,1967,Fossil,55709.547
+North America,1967,Nuclear,77.91129
+North America,1967,Renewables,3846.5354
+North America,1968,Fossil,58250.67
+North America,1968,Nuclear,131.32993
+North America,1968,Renewables,3849.6936
+North America,1969,Fossil,60143.8
+North America,1969,Nuclear,139.01332
+North America,1969,Renewables,4207.283
+North America,1970,Fossil,61497.777
+North America,1970,Nuclear,215.61952
+North America,1970,Renewables,4194.971
+North America,1971,Fossil,61538.04
+North America,1971,Nuclear,392.21527
+North America,1971,Renewables,4352.2153
+North America,1972,Fossil,63647.387
+North America,1972,Nuclear,557.80774
+North America,1972,Renewables,4542.402
+North America,1973,Fossil,65460.54
+North America,1973,Nuclear,883.2057
+North America,1973,Renewables,4607.66
+North America,1974,Fossil,62696.234
+North America,1974,Nuclear,1136.366
+North America,1974,Renewables,4945.906
+North America,1975,Fossil,59796.133
+North America,1975,Nuclear,1614.1669
+North America,1975,Renewables,4771.295
+North America,1976,Fossil,62240.13
+North America,1976,Nuclear,1790.9309
+North America,1976,Renewables,4704.907
+North America,1977,Fossil,63210.137
+North America,1977,Nuclear,2344.4756
+North America,1977,Renewables,4189.5396
+North America,1978,Fossil,63065.438
+North America,1978,Nuclear,2560.424
+North America,1978,Renewables,4740.9995
+North America,1979,Fossil,63192.242
+North America,1979,Nuclear,2377.4492
+North America,1979,Renewables,4767.595
+North America,1980,Fossil,60257.855
+North America,1980,Nuclear,2327.7842
+North America,1980,Renewables,4713.0586
+North America,1981,Fossil,57793.664
+North America,1981,Nuclear,2484.3545
+North America,1981,Renewables,4719.321
+North America,1982,Fossil,54293.72
+North America,1982,Nuclear,2518.0813
+North America,1982,Renewables,4957.2153
+North America,1983,Fossil,52886.965
+North America,1983,Nuclear,2645.3247
+North America,1983,Renewables,5146.296
+North America,1984,Fossil,54892.496
+North America,1984,Nuclear,2897.6423
+North America,1984,Renewables,5218.7954
+North America,1985,Fossil,54011.25
+North America,1985,Nuclear,3344.9968
+North America,1985,Renewables,5017.9155
+North America,1986,Fossil,53394.117
+North America,1986,Nuclear,3605.8435
+North America,1986,Renewables,5061.755
+North America,1987,Fossil,54643.45
+North America,1987,Nuclear,3907.0706
+North America,1987,Renewables,4763.3125
+North America,1988,Fossil,56286.742
+North America,1988,Nuclear,4418.404
+North America,1988,Renewables,4466.428
+North America,1989,Fossil,56778.125
+North America,1989,Nuclear,4354.11
+North America,1989,Renewables,4702.766
+North America,1990,Fossil,55441.56
+North America,1990,Nuclear,4594.537
+North America,1990,Renewables,4902.489
+North America,1991,Fossil,54241.344
+North America,1991,Nuclear,4862.881
+North America,1991,Renewables,4897.3657
+North America,1992,Fossil,54486.594
+North America,1992,Nuclear,4799.552
+North America,1992,Renewables,4696.45
+North America,1993,Fossil,54647.62
+North America,1993,Nuclear,4760.535
+North America,1993,Renewables,4878.889
+North America,1994,Fossil,55137.098
+North America,1994,Nuclear,4974.188
+North America,1994,Renewables,4677.686
+North America,1995,Fossil,55032.05
+North America,1995,Nuclear,5084.104
+North America,1995,Renewables,5031.821
+North America,1996,Fossil,56028.855
+North America,1996,Nuclear,4987.941
+North America,1996,Renewables,5346.8223
+North America,1997,Fossil,56160.906
+North America,1997,Nuclear,4578.9175
+North America,1997,Renewables,5278.822
+North America,1998,Fossil,55910.332
+North America,1998,Nuclear,4728.501
+North America,1998,Renewables,4889.6514
+North America,1999,Fossil,55919.426
+North America,1999,Nuclear,5022.4404
+North America,1999,Renewables,4951.32
+North America,2000,Fossil,56940.75
+North America,2000,Nuclear,5099.535
+North America,2000,Renewables,4711.0938
+North America,2001,Fossil,55329.94
+North America,2001,Nuclear,5120.1953
+North America,2001,Renewables,4092.1963
+North America,2002,Fossil,55372.535
+North America,2002,Nuclear,5094.1787
+North America,2002,Renewables,4456.5854
+North America,2003,Fossil,55194.676
+North America,2003,Nuclear,4911.21
+North America,2003,Renewables,4385.6416
+North America,2004,Fossil,55730.094
+North America,2004,Nuclear,5044.122
+North America,2004,Renewables,4374.2134
+North America,2005,Fossil,55411.152
+North America,2005,Nuclear,4937.635
+North America,2005,Renewables,4524.36
+North America,2006,Fossil,54310.676
+North America,2006,Nuclear,4913.4453
+North America,2006,Renewables,4640.1978
+North America,2007,Fossil,54705.754
+North America,2007,Nuclear,4908.5796
+North America,2007,Renewables,4527.1504
+North America,2008,Fossil,52578.79
+North America,2008,Nuclear,4834.4023
+North America,2008,Renewables,4837.8013
+North America,2009,Fossil,49155.47
+North America,2009,Nuclear,4690.39
+North America,2009,Renewables,4934.9756
+North America,2010,Fossil,50230.76
+North America,2010,Nuclear,4636.511
+North America,2010,Renewables,4971.4116
+North America,2011,Fossil,49210.906
+North America,2011,Nuclear,4510.16
+North America,2011,Renewables,5520.442
+North America,2012,Fossil,47719.86
+North America,2012,Nuclear,4331.7896
+North America,2012,Renewables,5392.8203
+North America,2013,Fossil,48252.035
+North America,2013,Nuclear,4413.175
+North America,2013,Renewables,5571.3916
+North America,2014,Fossil,48131.32
+North America,2014,Nuclear,4391.8335
+North America,2014,Renewables,5618.468
+North America,2015,Fossil,47220.598
+North America,2015,Nuclear,4309.67
+North America,2015,Renewables,5658.0825
+North America,2016,Fossil,46306.75
+North America,2016,Nuclear,4278.673
+North America,2016,Renewables,6010.2188
+North America,2017,Fossil,45831.78
+North America,2017,Nuclear,4212.467
+North America,2017,Renewables,6377.406
+North America,2018,Fossil,47035.895
+North America,2018,Nuclear,4173.7817
+North America,2018,Renewables,6392.865
+North America,2019,Fossil,46163.9
+North America,2019,Nuclear,4128.1025
+North America,2019,Renewables,6453.2695
+North America,2020,Fossil,41585.496
+North America,2020,Nuclear,3986.994
+North America,2020,Renewables,6682.4194
+North America,2021,Fossil,43781.266
+North America,2021,Nuclear,3887.9617
+North America,2021,Renewables,6915.6455
+North America,2022,Fossil,44720.008
+North America,2022,Nuclear,3790.8274
+North America,2022,Renewables,7426.0054
+Oceania,1965,Fossil,25772.75
+Oceania,1965,Nuclear,0
+Oceania,1965,Renewables,3244.4958
+Oceania,1966,Fossil,26603.018
+Oceania,1966,Nuclear,0
+Oceania,1966,Renewables,3250.6318
+Oceania,1967,Fossil,27543.777
+Oceania,1967,Nuclear,0
+Oceania,1967,Renewables,3264.8193
+Oceania,1968,Fossil,28527.79
+Oceania,1968,Nuclear,0
+Oceania,1968,Renewables,3371.0913
+Oceania,1969,Fossil,29060.955
+Oceania,1969,Nuclear,0
+Oceania,1969,Renewables,3404.1892
+Oceania,1970,Fossil,31001.178
+Oceania,1970,Nuclear,0
+Oceania,1970,Renewables,3695.2622
+Oceania,1971,Fossil,31394.566
+Oceania,1971,Nuclear,0
+Oceania,1971,Renewables,4045.0222
+Oceania,1972,Fossil,32252.861
+Oceania,1972,Nuclear,0
+Oceania,1972,Renewables,4089.6755
+Oceania,1973,Fossil,33892.684
+Oceania,1973,Nuclear,0
+Oceania,1973,Renewables,4103.809
+Oceania,1974,Fossil,35030.176
+Oceania,1974,Nuclear,0
+Oceania,1974,Renewables,4404.6685
+Oceania,1975,Fossil,34796.38
+Oceania,1975,Nuclear,0
+Oceania,1975,Renewables,4693.034
+Oceania,1976,Fossil,35958.395
+Oceania,1976,Nuclear,0
+Oceania,1976,Renewables,4367.676
+Oceania,1977,Fossil,37516.145
+Oceania,1977,Nuclear,0
+Oceania,1977,Renewables,4110.7554
+Oceania,1978,Fossil,37866.297
+Oceania,1978,Nuclear,0
+Oceania,1978,Renewables,4335.232
+Oceania,1979,Fossil,38533.074
+Oceania,1979,Nuclear,0
+Oceania,1979,Renewables,4578.1367
+Oceania,1980,Fossil,38148.227
+Oceania,1980,Nuclear,0
+Oceania,1980,Renewables,4544.1035
+Oceania,1981,Fossil,38086.676
+Oceania,1981,Nuclear,0
+Oceania,1981,Renewables,4566.09
+Oceania,1982,Fossil,37624.684
+Oceania,1982,Nuclear,0
+Oceania,1982,Renewables,4202.948
+Oceania,1983,Fossil,35984.516
+Oceania,1983,Nuclear,0
+Oceania,1983,Renewables,4228.5396
+Oceania,1984,Fossil,36902.535
+Oceania,1984,Nuclear,0
+Oceania,1984,Renewables,4385.388
+Oceania,1985,Fossil,37443.95
+Oceania,1985,Nuclear,0
+Oceania,1985,Renewables,4328.519
+Oceania,1986,Fossil,37768.434
+Oceania,1986,Nuclear,0
+Oceania,1986,Renewables,4566.258
+Oceania,1987,Fossil,38360.574
+Oceania,1987,Nuclear,0
+Oceania,1987,Renewables,4429.4785
+Oceania,1988,Fossil,39424.816
+Oceania,1988,Nuclear,0
+Oceania,1988,Renewables,4593.2783
+Oceania,1989,Fossil,40793.16
+Oceania,1989,Nuclear,0
+Oceania,1989,Renewables,4528.3594
+Oceania,1990,Fossil,40988.016
+Oceania,1990,Nuclear,0
+Oceania,1990,Renewables,4610.4355
+Oceania,1991,Fossil,40053.48
+Oceania,1991,Nuclear,0
+Oceania,1991,Renewables,4609.996
+Oceania,1992,Fossil,40235.277
+Oceania,1992,Nuclear,0
+Oceania,1992,Renewables,4366.8438
+Oceania,1993,Fossil,40329.03
+Oceania,1993,Nuclear,0
+Oceania,1993,Renewables,4620.3594
+Oceania,1994,Fossil,41367.504
+Oceania,1994,Nuclear,0
+Oceania,1994,Renewables,4761.1514
+Oceania,1995,Fossil,42550.715
+Oceania,1995,Nuclear,0
+Oceania,1995,Renewables,4817.629
+Oceania,1996,Fossil,43217.168
+Oceania,1996,Nuclear,0
+Oceania,1996,Renewables,4644.27
+Oceania,1997,Fossil,43793.746
+Oceania,1997,Nuclear,0
+Oceania,1997,Renewables,4295.6367
+Oceania,1998,Fossil,43876.11
+Oceania,1998,Nuclear,0
+Oceania,1998,Renewables,4453.101
+Oceania,1999,Fossil,45100.977
+Oceania,1999,Nuclear,0
+Oceania,1999,Renewables,4235.806
+Oceania,2000,Fossil,44813.87
+Oceania,2000,Nuclear,0
+Oceania,2000,Renewables,4342.5264
+Oceania,2001,Fossil,44699.24
+Oceania,2001,Nuclear,0
+Oceania,2001,Renewables,3948.7507
+Oceania,2002,Fossil,44727.375
+Oceania,2002,Nuclear,0
+Oceania,2002,Renewables,4202.8345
+Oceania,2003,Fossil,44449.305
+Oceania,2003,Nuclear,0
+Oceania,2003,Renewables,4057.5994
+Oceania,2004,Fossil,44870.645
+Oceania,2004,Nuclear,0
+Oceania,2004,Renewables,4383.6787
+Oceania,2005,Fossil,44330.316
+Oceania,2005,Nuclear,0
+Oceania,2005,Renewables,4144.8623
+Oceania,2006,Fossil,45311.74
+Oceania,2006,Nuclear,0
+Oceania,2006,Renewables,4144.838
+Oceania,2007,Fossil,45495.02
+Oceania,2007,Nuclear,0
+Oceania,2007,Renewables,4031.9854
+Oceania,2008,Fossil,45491.312
+Oceania,2008,Nuclear,0
+Oceania,2008,Renewables,3797.753
+Oceania,2009,Fossil,43697.895
+Oceania,2009,Nuclear,0
+Oceania,2009,Renewables,4014.4595
+Oceania,2010,Fossil,42790.332
+Oceania,2010,Nuclear,0
+Oceania,2010,Renewables,4212.8447
+Oceania,2011,Fossil,42737.977
+Oceania,2011,Nuclear,0
+Oceania,2011,Renewables,4828.2407
+Oceania,2012,Fossil,41649.473
+Oceania,2012,Nuclear,0
+Oceania,2012,Renewables,4566.873
+Oceania,2013,Fossil,41099.332
+Oceania,2013,Nuclear,0
+Oceania,2013,Renewables,4861.9287
+Oceania,2014,Fossil,41015.28
+Oceania,2014,Nuclear,0
+Oceania,2014,Renewables,4722.568
+Oceania,2015,Fossil,41009.88
+Oceania,2015,Nuclear,0
+Oceania,2015,Renewables,4871.0493
+Oceania,2016,Fossil,40069.008
+Oceania,2016,Nuclear,0
+Oceania,2016,Renewables,5226.511
+Oceania,2017,Fossil,39638.16
+Oceania,2017,Nuclear,0
+Oceania,2017,Renewables,4884.253
+Oceania,2018,Fossil,38812.184
+Oceania,2018,Nuclear,0
+Oceania,2018,Renewables,5474.549
+Oceania,2019,Fossil,39239.566
+Oceania,2019,Nuclear,0
+Oceania,2019,Renewables,5687.3994
+Oceania,2020,Fossil,35540.273
+Oceania,2020,Nuclear,0
+Oceania,2020,Renewables,6042.814
+Oceania,2021,Fossil,34347.555
+Oceania,2021,Nuclear,0
+Oceania,2021,Renewables,6740.1353
+Oceania,2022,Fossil,34497.52
+Oceania,2022,Nuclear,0
+Oceania,2022,Renewables,7559.747
+South America,1965,Fossil,5575.3184
+South America,1965,Nuclear,0
+South America,1965,Renewables,685.6325
+South America,1966,Fossil,5762.016
+South America,1966,Nuclear,0
+South America,1966,Renewables,744.5043
+South America,1967,Fossil,5811.388
+South America,1967,Nuclear,0
+South America,1967,Renewables,768.2353
+South America,1968,Fossil,6059.5117
+South America,1968,Nuclear,0
+South America,1968,Renewables,796.2612
+South America,1969,Fossil,6168.4277
+South America,1969,Nuclear,0
+South America,1969,Renewables,838.37476
+South America,1970,Fossil,6233.3403
+South America,1970,Nuclear,0
+South America,1970,Renewables,991.7968
+South America,1971,Fossil,6439.746
+South America,1971,Nuclear,0
+South America,1971,Renewables,1080.0741
+South America,1972,Fossil,6674.4355
+South America,1972,Nuclear,0
+South America,1972,Renewables,1199.6525
+South America,1973,Fossil,7149.6475
+South America,1973,Nuclear,0
+South America,1973,Renewables,1315.6691
+South America,1974,Fossil,7420.3286
+South America,1974,Nuclear,13.902109
+South America,1974,Renewables,1476.0419
+South America,1975,Fossil,7270.4517
+South America,1975,Nuclear,33.026424
+South America,1975,Renewables,1573.831
+South America,1976,Fossil,7568.09
+South America,1976,Nuclear,33.006325
+South America,1976,Renewables,1711.4116
+South America,1977,Fossil,7792.5405
+South America,1977,Nuclear,20.54421
+South America,1977,Renewables,1876.2932
+South America,1978,Fossil,7957.246
+South America,1978,Nuclear,35.53845
+South America,1978,Renewables,2034.4777
+South America,1979,Fossil,8285.419
+South America,1979,Nuclear,32.304733
+South America,1979,Renewables,2270.2737
+South America,1980,Fossil,8255.362
+South America,1980,Nuclear,27.46106
+South America,1980,Renewables,2494.9707
+South America,1981,Fossil,8011.6157
+South America,1981,Nuclear,32.32298
+South America,1981,Renewables,2458.3503
+South America,1982,Fossil,7920.5127
+South America,1982,Nuclear,21.000042
+South America,1982,Renewables,2632.5754
+South America,1983,Fossil,7606.5293
+South America,1983,Nuclear,37.41954
+South America,1983,Renewables,2814.1428
+South America,1984,Fossil,7523.5806
+South America,1984,Nuclear,67.60275
+South America,1984,Renewables,3048.4004
+South America,1985,Fossil,7530.864
+South America,1985,Nuclear,96.37119
+South America,1985,Renewables,3254.9695
+South America,1986,Fossil,7826.8687
+South America,1986,Nuclear,60.439594
+South America,1986,Renewables,3470.2205
+South America,1987,Fossil,7869.5825
+South America,1987,Nuclear,75.25625
+South America,1987,Renewables,3619.366
+South America,1988,Fossil,7958.984
+South America,1988,Nuclear,63.550457
+South America,1988,Renewables,3682.5105
+South America,1989,Fossil,7912.903
+South America,1989,Nuclear,66.84085
+South America,1989,Renewables,3718.9653
+South America,1990,Fossil,7710.087
+South America,1990,Nuclear,90.8894
+South America,1990,Renewables,3769.8923
+South America,1991,Fossil,7684.3354
+South America,1991,Nuclear,86.25025
+South America,1991,Renewables,3948.4575
+South America,1992,Fossil,7919.578
+South America,1992,Nuclear,81.44895
+South America,1992,Renewables,3965.704
+South America,1993,Fossil,7976.446
+South America,1993,Nuclear,74.193306
+South America,1993,Renewables,4190.209
+South America,1994,Fossil,8337.097
+South America,1994,Nuclear,73.82379
+South America,1994,Renewables,4381.0117
+South America,1995,Fossil,8675.533
+South America,1995,Nuclear,83.957085
+South America,1995,Renewables,4469.2134
+South America,1996,Fossil,8910.146
+South America,1996,Nuclear,85.21181
+South America,1996,Renewables,4564.254
+South America,1997,Fossil,9259.079
+South America,1997,Nuclear,94.43843
+South America,1997,Renewables,4730.485
+South America,1998,Fossil,9514.686
+South America,1998,Nuclear,89.55831
+South America,1998,Renewables,4750.7363
+South America,1999,Fossil,9417.64
+South America,1999,Nuclear,91.24254
+South America,1999,Renewables,4680.8105
+South America,2000,Fossil,9441.809
+South America,2000,Nuclear,99.19776
+South America,2000,Renewables,4821.216
+South America,2001,Fossil,9377.295
+South America,2001,Nuclear,169.69798
+South America,2001,Renewables,4459.5093
+South America,2002,Fossil,9211.053
+South America,2002,Nuclear,153.28741
+South America,2002,Renewables,4605.265
+South America,2003,Fossil,9072.572
+South America,2003,Nuclear,160.10316
+South America,2003,Renewables,4708.178
+South America,2004,Fossil,9594.338
+South America,2004,Nuclear,146.32596
+South America,2004,Renewables,4792.219
+South America,2005,Fossil,9686.024
+South America,2005,Nuclear,123.39207
+South America,2005,Renewables,4988.992
+South America,2006,Fossil,9983.242
+South America,2006,Nuclear,155.62169
+South America,2006,Renewables,5116.784
+South America,2007,Fossil,10447.678
+South America,2007,Nuclear,139.62486
+South America,2007,Renewables,5309.599
+South America,2008,Fossil,10620.038
+South America,2008,Nuclear,149.6102
+South America,2008,Renewables,5385.63
+South America,2009,Fossil,10177.119
+South America,2009,Nuclear,145.61943
+South America,2009,Renewables,5501.698
+South America,2010,Fossil,10838.253
+South America,2010,Nuclear,147.2603
+South America,2010,Renewables,5547.4043
+South America,2011,Fossil,11098.137
+South America,2011,Nuclear,147.04173
+South America,2011,Renewables,5745.5913
+South America,2012,Fossil,11671.484
+South America,2012,Nuclear,147.1808
+South America,2012,Renewables,5610.4595
+South America,2013,Fossil,12042.323
+South America,2013,Nuclear,139.79767
+South America,2013,Renewables,5510.5107
+South America,2014,Fossil,12133.308
+South America,2014,Nuclear,132.75247
+South America,2014,Renewables,5444.2534
+South America,2015,Fossil,11830.813
+South America,2015,Nuclear,136.19156
+South America,2015,Renewables,5451.4736
+South America,2016,Fossil,11356.197
+South America,2016,Nuclear,148.73259
+South America,2016,Renewables,5538.6997
+South America,2017,Fossil,11225.852
+South America,2017,Nuclear,132.40805
+South America,2017,Renewables,5687.481
+South America,2018,Fossil,10699.836
+South America,2018,Nuclear,134.76494
+South America,2018,Renewables,5897.296
+South America,2019,Fossil,10249.605
+South America,2019,Nuclear,145.10503
+South America,2019,Renewables,5966.954
+South America,2020,Fossil,9048.296
+South America,2020,Nuclear,140.53369
+South America,2020,Renewables,5867.339
+South America,2021,Fossil,10261.742
+South America,2021,Nuclear,143.82925
+South America,2021,Renewables,5786.8623
+South America,2022,Fossil,10329.182
+South America,2022,Nuclear,126.16324
+South America,2022,Renewables,6349.396
+World,1965,Fossil,12118.423
+World,1965,Nuclear,21.716187
+World,1965,Renewables,837.51013
+World,1966,Fossil,12489.832
+World,1966,Nuclear,28.682623
+World,1966,Renewables,874.84406
+World,1967,Fossil,12711.796
+World,1967,Nuclear,33.479187
+World,1967,Renewables,876.34924
+World,1968,Fossil,13207.534
+World,1968,Nuclear,41.691505
+World,1968,Renewables,905.28955
+World,1969,Fossil,13808.4795
+World,1969,Nuclear,48.41978
+World,1969,Renewables,938.85297
+World,1970,Fossil,14394.638
+World,1970,Nuclear,60.56411
+World,1970,Renewables,965.3286
+World,1971,Fossil,14662.517
+World,1971,Nuclear,82.56599
+World,1971,Renewables,989.30554
+World,1972,Fossil,15126.94
+World,1972,Nuclear,112.30732
+World,1972,Renewables,1016.14087
+World,1973,Fossil,15714.88
+World,1973,Nuclear,147.58588
+World,1973,Renewables,1012.0504
+World,1974,Fossil,15382.919
+World,1974,Nuclear,189.33264
+World,1974,Renewables,1089.5573
+World,1975,Fossil,15095.749
+World,1975,Nuclear,257.8857
+World,1975,Renewables,1082.7463
+World,1976,Fossil,15648.73
+World,1976,Nuclear,296.3693
+World,1976,Renewables,1062.5602
+World,1977,Fossil,15883.555
+World,1977,Nuclear,362.48102
+World,1977,Renewables,1080.8088
+World,1978,Fossil,16155.572
+World,1978,Nuclear,413.94934
+World,1978,Renewables,1149.7247
+World,1979,Fossil,16400.062
+World,1979,Nuclear,423.04193
+World,1979,Renewables,1187.746
+World,1980,Fossil,15890.994
+World,1980,Nuclear,454.56616
+World,1980,Renewables,1194.2091
+World,1981,Fossil,15429.688
+World,1981,Nuclear,527.25726
+World,1981,Renewables,1199.0635
+World,1982,Fossil,14987.736
+World,1982,Nuclear,561.7027
+World,1982,Renewables,1205.3229
+World,1983,Fossil,14856.889
+World,1983,Nuclear,625.21985
+World,1983,Renewables,1239.0413
+World,1984,Fossil,15198.153
+World,1984,Nuclear,745.3892
+World,1984,Renewables,1263.6318
+World,1985,Fossil,15203.874
+World,1985,Nuclear,868.9986
+World,1985,Renewables,1267.9424
+World,1986,Fossil,15230.522
+World,1986,Nuclear,914.1472
+World,1986,Renewables,1268.7225
+World,1987,Fossil,15453.068
+World,1987,Nuclear,976.4622
+World,1987,Renewables,1265.7246
+World,1988,Fossil,15705.927
+World,1988,Nuclear,1045.6237
+World,1988,Renewables,1283.2926
+World,1989,Fossil,15749.053
+World,1989,Nuclear,1056.5293
+World,1989,Renewables,1263.3997
+World,1990,Fossil,15624.825
+World,1990,Nuclear,1067.8203
+World,1990,Renewables,1291.0469
+World,1991,Fossil,15407.006
+World,1991,Nuclear,1100.2665
+World,1991,Renewables,1300.7595
+World,1992,Fossil,15251.021
+World,1992,Nuclear,1091.1716
+World,1992,Renewables,1285.226
+World,1993,Fossil,15045.586
+World,1993,Nuclear,1111.599
+World,1993,Renewables,1340.1984
+World,1994,Fossil,15008.775
+World,1994,Nuclear,1115.8014
+World,1994,Renewables,1333.565
+World,1995,Fossil,15066.743
+World,1995,Nuclear,1147.477
+World,1995,Renewables,1385.2928
+World,1996,Fossil,15292.131
+World,1996,Nuclear,1172.2979
+World,1996,Renewables,1384.4102
+World,1997,Fossil,15241.559
+World,1997,Nuclear,1148.2036
+World,1997,Renewables,1395.3857
+World,1998,Fossil,15111.396
+World,1998,Nuclear,1152.1951
+World,1998,Renewables,1392.2671
+World,1999,Fossil,15152.3
+World,1999,Nuclear,1180.1808
+World,1999,Renewables,1390.483
+World,2000,Fossil,15353.468
+World,2000,Nuclear,1190.8933
+World,2000,Renewables,1403.0035
+World,2001,Fossil,15336.684
+World,2001,Nuclear,1200.5875
+World,2001,Renewables,1351.0051
+World,2002,Fossil,15472.569
+World,2002,Nuclear,1196.2277
+World,2002,Renewables,1365.8964
+World,2003,Fossil,15935.19
+World,2003,Nuclear,1149.6361
+World,2003,Renewables,1352.9086
+World,2004,Fossil,16491.44
+World,2004,Nuclear,1179.1326
+World,2004,Renewables,1437.885
+World,2005,Fossil,16850.627
+World,2005,Nuclear,1159.98
+World,2005,Renewables,1476.6989
+World,2006,Fossil,17107.54
+World,2006,Nuclear,1152.4231
+World,2006,Renewables,1527.3237
+World,2007,Fossil,17468.16
+World,2007,Nuclear,1107.7748
+World,2007,Renewables,1561.9325
+World,2008,Fossil,17373.902
+World,2008,Nuclear,1083.6814
+World,2008,Renewables,1660.4733
+World,2009,Fossil,16821.336
+World,2009,Nuclear,1048.4066
+World,2009,Renewables,1675.4944
+World,2010,Fossil,17393.285
+World,2010,Nuclear,1055.4695
+World,2010,Renewables,1782.2198
+World,2011,Fossil,17610.008
+World,2011,Nuclear,992.6993
+World,2011,Renewables,1837.8906
+World,2012,Fossil,17640.959
+World,2012,Nuclear,907.6575
+World,2012,Renewables,1929.17
+World,2013,Fossil,17654.12
+World,2013,Nuclear,898.2446
+World,2013,Renewables,2028.0627
+World,2014,Fossil,17545.977
+World,2014,Nuclear,900.122
+World,2014,Renewables,2101.4048
+World,2015,Fossil,17426.805
+World,2015,Nuclear,896.1178
+World,2015,Renewables,2151.3354
+World,2016,Fossil,17342.213
+World,2016,Nuclear,893.61523
+World,2016,Renewables,2245.3193
+World,2017,Fossil,17436.912
+World,2017,Nuclear,886.11005
+World,2017,Renewables,2349.85
+World,2018,Fossil,17641.861
+World,2018,Nuclear,892.19104
+World,2018,Renewables,2471.5637
+World,2019,Fossil,17528.213
+World,2019,Nuclear,910.731
+World,2019,Renewables,2573.8525
+World,2020,Fossil,16509.02
+World,2020,Nuclear,864.29114
+World,2020,Renewables,2695.3992
+World,2021,Fossil,17268.938
+World,2021,Nuclear,889.7214
+World,2021,Renewables,2822.4973
+World,2022,Fossil,17208.133
+World,2022,Nuclear,840.40765
+World,2022,Renewables,2990.3892

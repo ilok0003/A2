@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 400,
+  "title": {
+    "text": "Per capita energy source by year",
+    "fontSize": 16,
+    "fontWeight": "bold",
+    "anchor": "middle",
+    "color": "#333"
+  },
+  "params": [
+    {
+      "name": "continent_filter",
+      "value": "World",
+      "bind": {
+        "input": "select",
+        "options": [
+          "World",
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ],
+        "name": "Select continent:"
+      }
+    }
+  ],
+  "data": {
+    "url": "../data/per-capita-energy-source-stacked-continent.csv"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "grid": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": "area",
+      "params": [
+        {
+          "name": "source_selection",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Source"
+            ]
+          },
+          "bind": "legend"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "title": "Percentage of Total Energy Source",
+          "axis": {
+            "grid": false
+          }
+        },
+        "color": {
+          "field": "Source",
+          "type": "nominal",
+          "title": "Energy Source",
+          "scale": {
+            "domain": [
+              "Fossil",
+              "Nuclear",
+              "Renewables"
+            ],
+            "range": [
+              "#d62728",
+              "#1f77b4",
+              "#2ca02c"
+            ]
+          },
+          "legend": {
+            "orient": "top",
+            "labelFontSize": 11
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Continent",
+            "type": "nominal",
+            "title": "Continent"
+          },
+          {
+            "field": "Year",
+            "type": "temporal",
+            "title": "Year",
+            "formatType": "year"
+          },
+          {
+            "field": "Source",
+            "type": "nominal",
+            "title": "Energy Source"
+          },
+          {
+            "field": "Value",
+            "type": "quantitative",
+            "title": "Energy Source Percentage",
+            "format": ",.0f"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "filter": "datum.Continent == continent_filter"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,119 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "../data/per-capita-energy-source-stacked-continent.csv"
+    },
+    "params": [
+        {
+            "name": "country_selection",
+            "bind": {
+                "input": "select",
+                "options": [
+                    "World",
+                    "Africa",
+                    "Asia",
+                    "Europe",
+                    "North America",
+                    "Oceania",
+                    "South America"
+                ],
+                "name": "Country selection: "
+            }
+        }
+    ],
+    "title": {
+        "text": "Consumption of Renewable Energy",
+        "fontSize": 16,
+        "subtitle": " ",
+        "align": "right",
+        "dx": -118
+    },
+    "width": 650,
+    "height": 350,
+    "encoding": {
+        "x": {
+            "field": "Year",
+            "type": "temporal",
+            "title": "Year",
+            "axis": {
+                "grid": false
+            }
+        }
+    },
+    "layer": [
+        {
+            "mark": "area",
+            "params": [
+                {
+                    "name": "category_selection",
+                    "select": {
+                        "type": "point",
+                        "fields": [
+                            "Source"
+                        ]
+                    },
+                    "bind": "legend"
+                }
+            ],
+            "encoding": {
+                "y": {
+                    "field": "Value",
+                    "type": "quantitative",
+                    "title": "Capacity (Terajoule)",
+                    "axis": {
+                        "grid": false
+                    },
+                    "stack": "zero"
+                },
+                "color": {
+                    "field": "Source",
+                    "type": "nominal",
+                    "title": "Renewable Energy",
+                    "scale": {
+                        "domain": {
+                            "param": "category_selection"
+                        },
+                        "scheme": "accent"
+                    },
+                    "legend": {
+                        "orient": "top",
+                        "labelFontSize": 11
+                    }
+                },
+                "tooltip": [
+                    {
+                        "field": "Year",
+                        "type": "temporal",
+                        "title": "Year",
+                        "formatType": "year"
+                    },
+                    {
+                        "field": "Source",
+                        "type": "nominal",
+                        "title": "Energy Type"
+                    },
+                    {
+                        "field": "Value",
+                        "type": "quantitative",
+                        "title": "Production Capacity (Terajoule)",
+                        "format": ",.0f"
+                    }
+                ]
+            },
+            "transform": [
+                {
+                    "filter": {
+                        "param": "category_selection"
+                    }
+                }
+            ]
+        }
+    ],
+    "config": {
+        "style": {
+            "cell": {
+                "stroke": "transparent"
+            }
+        }
+    }
+}
