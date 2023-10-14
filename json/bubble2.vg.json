@@ -4,7 +4,7 @@
         "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/per-capita-consumption-based-co-emissions-vs-per-capita-energy-consumption-cleaned.csv"
     },
     "width": 800,
-    "height": 400,
+    "height": 600,
     "layer": [
         {
             "mark": "circle",
@@ -111,7 +111,10 @@
             },
             "title": "Per capita CO₂ emissions vs. per capita energy consumption (2021)",
             "selection": {
-                
+                "brush": {
+                    "type": "interval",
+                    "bind": "scales"
+                },
                 "continent": {
                     "type": "multi",
                     "fields": [
