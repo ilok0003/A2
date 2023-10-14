@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "data": {
-        "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/energy-use-per-capita-vs-share-of-population-in-extreme-poverty-cleaned.csv"
+        "url": "../data/per-capita-consumption-based-co-emissions-vs-per-capita-energy-consumption-cleaned.csv"
     },
     "width": 600,
     "height": 400,
@@ -10,7 +10,7 @@
             "mark": "circle",
             "encoding": {
                 "x": {
-                    "field": "Energy",
+                    "field": "Consumption",
                     "type": "quantitative",
                     "title": "Energy consumption per capita (kWh)",
                     "scale": {
@@ -21,14 +21,14 @@
                     }
                 },
                 "y": {
-                    "field": "Poverty",
+                    "field": "Emissions",
                     "type": "quantitative",
-                    "title": "Share in extreme Poverty (%)",
+                    "title": "Per capita emissions (tonnes CO2)",
                     "scale": {
                         "zero": true,
                         "domain": [
                             0,
-                            24
+                            20
                         ]
                     }
                 },
@@ -80,16 +80,16 @@
                         "type": "nominal"
                     },
                     {
-                        "field": "Energy",
+                        "field": "Consumption",
                         "type": "quantitative",
                         "title": "Energy consumption per capita (kWh)",
                         "format": ".0f"
                     },
                     {
-                        "field": "Poverty",
+                        "field": "Emissions",
                         "type": "quantitative",
-                        "title": "Share in extreme poverty (%)",
-                        "format": ".1f"
+                        "title": "Per capita emissions (tonnes CO2)",
+                        "format": ".2f"
                     },
                     {
                         "field": "Population",
@@ -109,7 +109,7 @@
                     "value": 0.2
                 }
             },
-            "title": "Energy use per capita vs. share in extreme poverty (2014)",
+            "title": "Per capita CO₂ emissions vs. per capita energy consumption (2021)",
             "selection": {
                 "brush": {
                     "type": "interval",
@@ -144,11 +144,11 @@
             },
             "encoding": {
                 "x": {
-                    "field": "Energy",
+                    "field": "Consumption",
                     "type": "quantitative"
                 },
                 "y": {
-                    "field": "Poverty",
+                    "field": "Emissions",
                     "type": "quantitative"
                 },
                 "text": {

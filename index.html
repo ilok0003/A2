@@ -4,77 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Influenza Analysis</title>
-    <!-- Import Vega & Vega-Lite libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css" media="all">
+    <title>Energy Consumption Worldwide</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <style>
+        .viz-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .viz-container .viz {
+            flex: 2;
+        }
+
+        .viz-container .placeholder {
+            flex: 1;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Influenza Analysis</h1>
-        <p class="main-description">
-            The study of influenza, a common yet potentially severe ailment, has always been of paramount importance in
-            the medical field. This <span class="highlight">comprehensive analysis</span> delves deep into the patterns
-            and prevalence of influenza cases across various global regions. By examining the data, professionals,
-            researchers, and policymakers can gain a clearer understanding of the disease's reach, its potential impact,
-            and the underlying factors that contribute to its spread. This report aims to provide an in-depth <span
-                class="highlight">insight</span> into influenza occurrences, facilitating a robust foundation upon which
-            future policies and preventive measures can be built.
-        </p>
 
-        <!-- First Analysis: Scatter Plot -->
-        <div class="visualization-section">
-            <div class="description-container">
-                <h2>Correlation Analysis</h2>
-                <p class="visualization-description">
-                    One of the primary tools in our analysis is examining the correlation between various factors. The
-                    relationship between <span class="highlight">total deaths</span>, cases, and population in 2017
-                    provides a detailed perspective into the magnitude and implications of influenza across nations.
-                    Unearthing such correlations can lead to a better understanding of the patterns of disease spread.
-                    This analysis is not just statistical but offers real-world insights, enabling health professionals
-                    to identify potential outliers, discern underlying trends, and thus, evaluate the efficiency of
-                    health infrastructures. Such insights are instrumental in comprehensively understanding the <span
-                        class="highlight">global health dynamics</span>, setting the stage for more informed
-                    decision-making and policy formulation.
-                </p>
-            </div>
-            <div class="visualization" id="vis1"></div>
-        </div>
+    <h1>Energy Consumption Worldwide</h1>
+    <p>A visualization representation of energy consumption patterns across different regions of the world.</p>
 
-        <!-- Second Analysis: Choropleth Map -->
-        <div class="visualization-section">
-            <div class="description-container">
-                <h2>Geographical Overview</h2>
-                <p class="visualization-description">
-                    Geography plays a pivotal role in the spread and impact of diseases. Our <span
-                        class="highlight">geographical distribution</span> analysis of influenza cases offers a
-                    comprehensive and nuanced perspective on how the disease fares across different regions. The
-                    variation in the number of cases per 10,000 population in different regions provides an essential
-                    measure of the disease's prevalence. Such data becomes a linchpin for understanding <span
-                        class="highlight">regional disparities</span>, enabling researchers to delve into potential
-                    reasons behind them, be it climate variations, population density, or healthcare infrastructure
-                    quality. By collating and analyzing this data, we aim to provide stakeholders with actionable
-                    insights to design interventions and strategies that can significantly mitigate the disease's
-                    impact.
-                </p>
-            </div>
-            <div class="visualization" id="vis2"></div>
-        </div>
+    <!-- Chloropleth Map Visualization -->
+    <div id="chloropleth"></div>
+
+    <!-- Visualization 2 with placeholder on right -->
+    <div class="viz-container">
+        <div id="viz2" class="viz"></div>
+        <div class="placeholder"></div>
     </div>
 
-    <!-- Visualization Scripts -->
+    <!-- Visualization 3 with placeholder on left -->
+    <div class="viz-container">
+        <div class="placeholder"></div>
+        <div id="viz3" class="viz"></div>
+    </div>
+
+    <!-- Visualization 4 with placeholder on right -->
+    <div class="viz-container">
+        <div id="viz4" class="viz"></div>
+        <div class="placeholder"></div>
+    </div>
+
+    <!-- Visualization 5 with placeholder on left -->
+    <div class="viz-container">
+        <div class="placeholder"></div>
+        <div id="viz5" class="viz"></div>
+    </div>
+
     <script>
-        const specVis1 = "json/choropleth.vg.json";
-        const specVis2 = "json/stacked_area.vg.json";
-        vegaEmbed('#vis1', specVis1, { "actions": false });
-        vegaEmbed('#vis2', specVis2, { "actions": false })
-            .then(result => { })
-            .catch(console.error);
+        // Assuming the Vega visualizations are defined elsewhere and are available.
+        // For the purpose of this example, I'll use placeholders.
+
+        const chloroplethSpec = "json/choropleth.vg.json";  // your chloropleth Vega specification here
+        const viz2Spec = "json/bubble.vg.json";        // your second Vega visualization spec here
+        const viz3Spec = "json/stacked_are.vg.json";        // your third Vega visualization spec here
+        const viz4Spec = "json/bar.vg.json";        // your fourth Vega visualization spec here
+        const viz5Spec = "json/bubble2.vg.json";        // your fifth Vega visualization spec here
+
+        vegaEmbed('#chloropleth', chloroplethSpec);
+        vegaEmbed('#viz2', viz2Spec);
+        vegaEmbed('#viz3', viz3Spec);
+        vegaEmbed('#viz4', viz4Spec);
+        vegaEmbed('#viz5', viz5Spec);
+
     </script>
+
 </body>
 
 </html>

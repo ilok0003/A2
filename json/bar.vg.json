@@ -2,6 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Opposition to Nuclear Energy (2011)",
   "description": "Percentage of respondents opposed to nuclear energy by country, as per Ipsos MORI (2011).",
+  "width": 600,
+  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/public-opposition-to-nuclear-energy-production.csv"
   },

@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
-  "height": 400,
+  "width": 1200,
+  "height": 600,
   "title": {
-    "text": "Energy use per person",
+    "text": "Energy consumption per capita (kWh)",
     "fontSize": 16,
     "fontWeight": "bold",
     "anchor": "middle",
@@ -23,10 +23,10 @@
     },
     {
       "name": "zoom",
-      "value": 160,
+      "value": 220,
       "bind": {
         "input": "range",
-        "min": 160,
+        "min": 220,
         "max": 800,
         "step": 20,
         "name": "Zoom: "
@@ -173,13 +173,14 @@
             "type": "sequential",
             "domain": [
               0,
-              60000
+              100000
             ],
             "scheme": "yelloworangered"
           },
           "legend": {
-            "title": "Energy use per capita (kWh)",
-            "labelFontSize": 12
+            "title": "Energy consumption per capita (kWh)",
+            "labelFontSize": 12,
+            "orient": "bottom"
           }
         },
         "opacity": {
@@ -195,7 +196,7 @@
             "field": "Energy use per capita",
             "type": "quantitative",
             "format": ".0f",
-            "title": "Energy use per capita (kWh)"
+            "title": "Energy consumption per capita (kWh)"
           }
         ]
       }
