@@ -111,10 +111,7 @@
             },
             "title": "Per capita CO₂ emissions vs. per capita energy consumption (2021)",
             "selection": {
-                "brush": {
-                    "type": "interval",
-                    "bind": "scales"
-                },
+                
                 "continent": {
                     "type": "multi",
                     "fields": [
