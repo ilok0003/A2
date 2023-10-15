@@ -197,7 +197,8 @@
                     "extent": [
                         -1,
                         30
-                    ]
+                    ],
+                    "method": "linear"
                 }
             ],
             "mark": "line",
