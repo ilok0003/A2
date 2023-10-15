@@ -65,7 +65,7 @@ p {
 .viz-container .placeholder {
     flex: 1;
     border: 1px dashed #d1d9e0;
-    padding: 20px, 20px;
+    padding: 20px; /* Corrected padding values */
     background-color: #f9fcfd;
     border-radius: 8px;
     display: flex;
@@ -92,10 +92,10 @@ p {
 }
 
 .viz-container .placeholder h2 {
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Reduced space for title */
 }
 
 .viz-container .placeholder p {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;   /* Adjusted margin for better spacing */
+    margin-bottom: 10px;
 }
