@@ -18,83 +18,85 @@
         <h1>Energy Consumption Worldwide</h1>
 
         <!-- Chloropleth Map Visualization -->
-        <div class="viz-container"></div>
-        <div class="viz-container-centered">
-            <div id="chloropleth" class="viz"></div>
+        <div class="viz-container">
+            <div class="viz-container-centered">
+                <div id="chloropleth" class="viz"></div>
+            </div>
+            <p>This choropleth map showcases the energy consumption per capita, adjustable across the years from 1985 to
+                2021.</p>
         </div>
-        <p>This choropleth map showcases the energy consumption per capita, adjustable across the years from 1985 to
-            2021.</p>
-    </div>
 
-    <!-- Visualization 2 with placeholder on right -->
-    <div class="viz-container">
-        <div id="viz2" class="viz"></div>
-        <div class="placeholder">
-            <h2>Bubble Chart</h2>
-            <hr>
-            <p>This bubble chart represents the relationship between energy use per capita and the share in extreme
-                poverty for the year 2014, with the bubble size indicating population size.</p>
+        <!-- Visualization 2 with placeholder on right -->
+        <div class="viz-container">
+            <div id="viz2" class="viz"></div>
+            <div class="placeholder">
+                <h2>Bubble Chart</h2>
+                <hr>
+                <p>This bubble chart represents the relationship between energy use per capita and the share in extreme
+                    poverty for the year 2014, with the bubble size indicating population size.</p>
+            </div>
         </div>
-    </div>
 
-    <!-- Visualization 3 with placeholder on left -->
-    <div class="viz-container">
-        <div class="placeholder">
-            <h2>Stacked Area Chart</h2>
-            <hr>
-            <p>The stacked area chart depicts per capita energy source by year, categorizing them into fossil, nuclear,
-                and renewables.</p>
+        <!-- Visualization 3 with placeholder on left -->
+        <div class="viz-container">
+            <div class="placeholder">
+                <h2>Stacked Area Chart</h2>
+                <hr>
+                <p>The stacked area chart depicts per capita energy source by year, categorizing them into fossil,
+                    nuclear,
+                    and renewables.</p>
+            </div>
+            <div id="viz3" class="viz"></div>
         </div>
-        <div id="viz3" class="viz"></div>
-    </div>
 
-    <!-- Visualization 4 with placeholder on right -->
-    <div class="viz-container">
-        <div id="viz4" class="viz"></div>
-        <div class="placeholder">
-            <h2>Bar Chart</h2>
-            <hr>
-            <p>The bar chart visualizes opposition to nuclear energy globally, with an average opposition rate of 62%.
-            </p>
+        <!-- Visualization 4 with placeholder on right -->
+        <div class="viz-container">
+            <div id="viz4" class="viz"></div>
+            <div class="placeholder">
+                <h2>Bar Chart</h2>
+                <hr>
+                <p>The bar chart visualizes opposition to nuclear energy globally, with an average opposition rate of
+                    62%.
+                </p>
+            </div>
         </div>
-    </div>
 
-    <!-- Visualization 5 with placeholder on left -->
-    <div class="viz-container">
-        <div class="placeholder">
-            <h2>Second Bubble Chart</h2>
-            <hr>
-            <p>This bubble chart illustrates the correlation between per capita CO2 emissions and per capita energy
-                consumption for the year 2021, with bubble sizes corresponding to population figures.</p>
+        <!-- Visualization 5 with placeholder on left -->
+        <div class="viz-container">
+            <div class="placeholder">
+                <h2>Second Bubble Chart</h2>
+                <hr>
+                <p>This bubble chart illustrates the correlation between per capita CO2 emissions and per capita energy
+                    consumption for the year 2021, with bubble sizes corresponding to population figures.</p>
+            </div>
+            <div id="viz5" class="viz"></div>
         </div>
-        <div id="viz5" class="viz"></div>
-    </div>
 
-    <!-- Visualization 6 (New one) with placeholder on right -->
-    <div class="viz-container">
-        <div id="viz6" class="viz"></div>
-        <div class="placeholder">
-            <h2>New Visualization Title</h2>
-            <hr>
-            <p>Description for the new visualization...</p>
+        <!-- Visualization 6 (New one) with placeholder on right -->
+        <div class="viz-container">
+            <div id="viz6" class="viz"></div>
+            <div class="placeholder">
+                <h2>New Visualization Title</h2>
+                <hr>
+                <p>Description for the new visualization...</p>
+            </div>
         </div>
-    </div>
 
-    <script>
-        const chloroplethSpec = "json/choropleth.vg.json";
-        const viz2Spec = "json/bubble.vg.json";
-        const viz3Spec = "json/stacked_area.vg.json";
-        const viz4Spec = "json/bump.vg.json";
-        const viz5Spec = "json/bubble2.vg.json";
-        const viz6Spec = "json/bar.vg.json";
+        <script>
+            const chloroplethSpec = "json/choropleth.vg.json";
+            const viz2Spec = "json/bubble.vg.json";
+            const viz3Spec = "json/stacked_area.vg.json";
+            const viz4Spec = "json/bump.vg.json";
+            const viz5Spec = "json/bubble2.vg.json";
+            const viz6Spec = "json/bar.vg.json";
 
-        vegaEmbed('#chloropleth', chloroplethSpec);
-        vegaEmbed('#viz2', viz2Spec);
-        vegaEmbed('#viz3', viz3Spec);
-        vegaEmbed('#viz4', viz4Spec);
-        vegaEmbed('#viz5', viz5Spec);
-        vegaEmbed('#viz6', viz6Spec);
-    </script>
+            vegaEmbed('#chloropleth', chloroplethSpec);
+            vegaEmbed('#viz2', viz2Spec);
+            vegaEmbed('#viz3', viz3Spec);
+            vegaEmbed('#viz4', viz4Spec);
+            vegaEmbed('#viz5', viz5Spec);
+            vegaEmbed('#viz6', viz6Spec);
+        </script>
     </div>
 
 </body>
