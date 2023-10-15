@@ -46,6 +46,14 @@ p {
     margin-top: 40px; 
 }
 
+.viz-container .viz, .viz-container .placeholder {
+    margin-right: 20px;
+}
+
+.viz-container .viz:last-child, .viz-container .placeholder:last-child {
+    margin-right: 0;
+}
+
 .viz-container .viz {
     flex: 2;
     border: 1px solid #d1d9e0;
@@ -81,4 +89,13 @@ p {
 
 .viz-container .placeholder > *:last-child {
     order: 2;
+}
+
+.viz-container .placeholder h2 {
+    margin-bottom: 10px;
+}
+
+.viz-container .placeholder p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
