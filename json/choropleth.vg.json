@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1400,
+  "width": 1300,
   "height": 600,
   "title": {
     "text": "Energy consumption per capita (kWh)",
