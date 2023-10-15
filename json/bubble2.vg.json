@@ -193,12 +193,10 @@
             "transform": [
                 {
                     "regression": "Consumption",
-                    "on": "Emissions",
-                    "extent": [
-                        -1,
-                        30
-                    ],
-                    "method": "linear"
+                    "on": "Emissions"
+                },
+                {
+                    "calculate": "datum.Regression_Consumption_Consumption * datum.Consumption + datum.Regression_Consumption_Intercept" , "as": "Regression_Consumption_Emissions"
                 }
             ],
             "mark": "line",
