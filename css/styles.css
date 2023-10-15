@@ -82,6 +82,12 @@ p {
     align-items: center;
 }
 
+.viz-container .placeholder p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .viz-container .placeholder::before {
     content: '';
     height: 1px;
