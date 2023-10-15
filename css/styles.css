@@ -30,6 +30,14 @@ p {
     margin-bottom: 20px;
 }
 
+/* Sub-description Styles */
+.sub-description {
+    font-size: 1.1em;
+    color: #7f8c8d; 
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
 /* Visualization Styles */
 .viz-container {
     display: flex;
@@ -65,7 +73,7 @@ p {
 .viz-container .placeholder {
     flex: 1;
     border: 1px dashed #d1d9e0;
-    padding: 20px; /* Corrected padding values */
+    padding: 20px;
     background-color: #f9fcfd;
     border-radius: 8px;
     display: flex;
@@ -92,10 +100,21 @@ p {
 }
 
 .viz-container .placeholder h2 {
-    margin-bottom: 5px; /* Reduced space for title */
+    margin-bottom: 5px;
 }
 
 .viz-container .placeholder p {
-    margin-top: 10px;   /* Adjusted margin for better spacing */
+    margin-top: 10px;
     margin-bottom: 10px;
+}
+
+/* Highlighting key terms */
+.highlight1 {
+    color: #e74c3c; /* Red accent */
+    font-weight: bold;
+}
+
+.highlight2 {
+    color: #3498db; /* Blue accent */
+    font-weight: bold;
 }
