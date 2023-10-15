@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css"> <!-- Make sure the path to your styles is correct -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -18,14 +18,11 @@
     <h1>Energy Consumption Worldwide</h1>
 
     <!-- Chloropleth Map Visualization -->
-    <div class="viz-container">
+    <div class="viz-container-centered">
         <div id="chloropleth" class="viz"></div>
-        <div class="placeholder">
-            <h2>Choropleth Map</h2>
-            <hr>
-            <p>This choropleth map showcases the energy consumption per capita, adjustable across the years from 1985 to 2021.</p>
-        </div>
     </div>
+    <p>This choropleth map showcases the energy consumption per capita, adjustable across the years from 1985 to 2021.</p>
+
 
     <!-- Visualization 2 with placeholder on right -->
     <div class="viz-container">
@@ -42,7 +39,7 @@
         <div class="placeholder">
             <h2>Stacked Area Chart</h2>
             <hr>
-            <p>The stacked area chart below depicts per capita energy source by year, categorizing them into fossil, nuclear, and renewables.</p>
+            <p>The stacked area chart depicts per capita energy source by year, categorizing them into fossil, nuclear, and renewables.</p>
         </div>
         <div id="viz3" class="viz"></div>
     </div>
@@ -83,14 +80,14 @@
         const viz3Spec = "json/stacked_area.vg.json";
         const viz4Spec = "json/bump.vg.json";
         const viz5Spec = "json/bubble2.vg.json";
-        const viz6Spec = "json/bar.vg.json"; // Path for your new visualization
+        const viz6Spec = "json/new_viz.vg.json"; 
 
         vegaEmbed('#chloropleth', chloroplethSpec);
         vegaEmbed('#viz2', viz2Spec);
         vegaEmbed('#viz3', viz3Spec);
         vegaEmbed('#viz4', viz4Spec);
         vegaEmbed('#viz5', viz5Spec);
-        vegaEmbed('#viz6', viz6Spec); // Embedding the new visualization
+        vegaEmbed('#viz6', viz6Spec);
     </script>
 </div>
 

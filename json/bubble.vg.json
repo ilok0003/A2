@@ -3,7 +3,7 @@
     "data": {
       "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/energy-use-per-capita-vs-share-of-population-in-extreme-poverty-cleaned.csv"
     },
-    "width": 800,
+    "width": 700,
     "height": 400,
     "title": {
       "text": "Energy Consumption & Poverty Levels (2014)",

@@ -3,8 +3,8 @@
     "data": {
         "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/per-capita-consumption-based-co-emissions-vs-per-capita-energy-consumption-cleaned.csv"
     },
-    "width": 800,
-    "height": 600,
+    "width": 700,
+    "height": 400,
     "title": {
         "text": "Energy Consumption & CO2 Emissions per Person (2021)",
         "font": "Monospace",
