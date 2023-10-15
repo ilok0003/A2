@@ -4,10 +4,11 @@
   "height": 600,
   "title": {
     "text": "Energy consumption per capita (kWh)",
-    "fontSize": 16,
-    "fontWeight": "bold",
-    "anchor": "middle",
-    "color": "#333"
+    "font": "Monospace",
+      "fontSize": 24,
+      "fontWeight": "bold",
+      "anchor": "middle",
+      "offset": 10
   },
   "params": [
     {

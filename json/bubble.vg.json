@@ -1,37 +1,39 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "data": {
-        "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/energy-use-per-capita-vs-share-of-population-in-extreme-poverty-cleaned.csv"
+      "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/energy-use-per-capita-vs-share-of-population-in-extreme-poverty-cleaned.csv"
     },
     "width": 800,
     "height": 400,
+    "title": {
+      "text": "Energy Consumption & Poverty Levels (2014)",
+      "font": "Monospace",
+      "fontSize": 24,
+      "fontWeight": "bold",
+      "anchor": "middle",
+      "offset": 10
+    },
     "layer": [
-        {
-            "mark": "circle",
-            "encoding": {
-                "x": {
-                    "field": "Energy",
-                    "type": "quantitative",
-                    "title": "Energy consumption per capita (kWh)",
-                    "scale": {
-                        "domain": [
-                            0,
-                            70000
-                        ]
-                    }
-                },
-                "y": {
-                    "field": "Poverty",
-                    "type": "quantitative",
-                    "title": "Share in extreme Poverty (%)",
-                    "scale": {
-                        "zero": true,
-                        "domain": [
-                            0,
-                            24
-                        ]
-                    }
-                },
+      {
+        "mark": "circle",
+        "encoding": {
+          "x": {
+            "field": "Energy",
+            "type": "quantitative",
+            "title": "Energy Consumption per Person (kWh)",
+            "scale": {
+              "domain": [0, 70000]
+            }
+          },
+          "y": {
+            "field": "Poverty",
+            "type": "quantitative",
+            "title": "Percentage in Extreme Poverty",
+            "scale": {
+              "zero": true,
+              "domain": [0, 24]
+            }
+          },
                 "size": {
                     "field": "Population",
                     "type": "quantitative",
@@ -45,13 +47,13 @@
                     "legend": {
                         "title": "Population",
                         "format": ".2s",
-                        "orient": "bottom"
+                        "orient": "right"
                     }
                 },
                 "color": {
                     "field": "Continent",
                     "type": "nominal",
-                    "title": "Continent (click to select)",
+                    "title": "Continent",
                     "scale": {
                         "domain": [
                             "Africa",
@@ -71,7 +73,7 @@
                         ]
                     },
                     "legend": {
-                        "orient": "top"
+                        "orient": "right"
                     }
                 },
                 "tooltip": [
@@ -102,25 +104,47 @@
                     }
                 ],
                 "opacity": {
-                    "condition": {
-                        "selection": "continent",
-                        "value": 1
-                    },
+                    "condition": [
+                        {
+                            "test": {"selection": "continent"},
+                            "value": 1
+                        }
+                    ],
                     "value": 0.2
                 }
+                
+                
             },
-            "title": "Energy use per capita vs. share in extreme poverty (2014)",
             "selection": {
                 "brush": {
                     "type": "interval",
                     "bind": "scales"
                 },
                 "continent": {
-                    "type": "multi",
-                    "fields": [
-                        "Continent"
-                    ],
-                    "bind": "legend"
+                    "type": "single",
+                    "fields": ["Continent"],
+                    "bind": {
+                        "input": "select",
+                        "options": [
+                            null,
+                            "Africa",
+                            "Asia",
+                            "Europe",
+                            "North America",
+                            "South America",
+                            "Oceania"
+                        ],
+                        "labels": [
+                            "World",
+                            "Africa",
+                            "Asia",
+                            "Europe",
+                            "North America",
+                            "South America",
+                            "Oceania"
+                        ],
+                        "name": "Select Continent"
+                    }
                 }
             }
         },

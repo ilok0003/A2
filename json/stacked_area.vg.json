@@ -4,10 +4,11 @@
   "height": 400,
   "title": {
     "text": "Per capita energy source by year",
-    "fontSize": 16,
-    "fontWeight": "bold",
-    "anchor": "middle",
-    "color": "#333"
+    "font": "Monospace",
+      "fontSize": 24,
+      "fontWeight": "bold",
+      "anchor": "middle",
+      "offset": 10
   },
   "params": [
     {
@@ -82,7 +83,7 @@
             ]
           },
           "legend": {
-            "orient": "top",
+            "orient": "bottom",
             "labelFontSize": 11
           }
         },

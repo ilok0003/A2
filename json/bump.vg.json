@@ -2,7 +2,14 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 1000,
   "height": 500,
-  "title": "Renewable Electricity per Capita by Continent",
+  "title": {
+    "text": "Renewable Electricity Generation per Capita",
+    "font": "Monospace",
+    "fontSize": 24,
+    "fontWeight": "bold",
+    "anchor": "middle",
+    "offset": 10
+  },
   "data": {
     "url": "https://raw.githubusercontent.com/ilok0003/A2/main/data/renewable-electricity-per-capita.csv"
   },
@@ -55,7 +62,8 @@
             },
             "y": {
               "field": "Renewable electricity per capita (kWh)",
-              "type": "quantitative"
+              "type": "quantitative",
+              "title": "Renewable Electricity Generation per Capita (kWh)"
             },
             "color": {
               "field": "Entity",
@@ -86,7 +94,25 @@
             "detail": {
               "field": "Entity",
               "type": "nominal"
-            }
+            },
+            "tooltip": [
+              {
+                  "field": "Entity",
+                  "type": "nominal",
+                  "title": "Continent"
+              },
+              {
+                  "field": "Year",
+                  "type": "ordinal",
+                  "title": "Year"
+              },
+              {
+                  "field": "Renewable electricity per capita (kWh)",
+                  "type": "quantitative",
+                  "title": "Electricity per Capita (kWh)",
+                  "format": ".2f"
+              }
+          ]
           }
         },
         {
@@ -117,9 +143,10 @@
             "type": "text",
             "align": "left",
             "baseline": "bottom",
-            "dx": -350,
+            "dx": -400,
             "dy": -5,
-            "angle":270
+            "angle": 270,
+            "fontSize": 16
           },
           "data": {
             "values": [

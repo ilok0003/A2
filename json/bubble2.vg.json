@@ -5,6 +5,14 @@
     },
     "width": 800,
     "height": 600,
+    "title": {
+        "text": "Energy Consumption & CO2 Emissions per Person (2021)",
+        "font": "Monospace",
+        "fontSize": 24,
+        "fontWeight": "bold",
+        "anchor": "middle",
+        "offset": 10
+    },
     "layer": [
         {
             "mark": "circle",
@@ -12,7 +20,7 @@
                 "x": {
                     "field": "Consumption",
                     "type": "quantitative",
-                    "title": "Energy consumption per capita (kWh)",
+                    "title": "Energy Consumption per Person (kWh)",
                     "scale": {
                         "domain": [
                             0,
@@ -23,7 +31,7 @@
                 "y": {
                     "field": "Emissions",
                     "type": "quantitative",
-                    "title": "Per capita emissions (tonnes CO2)",
+                    "title": "CO2 Emissions per Person (tonnes)",
                     "scale": {
                         "zero": true,
                         "domain": [
@@ -45,13 +53,13 @@
                     "legend": {
                         "title": "Population",
                         "format": ".2s",
-                        "orient": "bottom"
+                        "orient": "right"
                     }
                 },
                 "color": {
                     "field": "Continent",
                     "type": "nominal",
-                    "title": "Continent (click to select)",
+                    "title": "Continent",
                     "scale": {
                         "domain": [
                             "Africa",
@@ -71,7 +79,7 @@
                         ]
                     },
                     "legend": {
-                        "orient": "top-left"
+                        "orient": "right"
                     }
                 },
                 "tooltip": [
@@ -88,8 +96,8 @@
                     {
                         "field": "Emissions",
                         "type": "quantitative",
-                        "title": "Per capita emissions (tonnes CO2)",
-                        "format": ".2f"
+                        "title": "CO2 emissions per capita (tonnes)",
+                        "format": ".1f"
                     },
                     {
                         "field": "Population",
@@ -102,25 +110,49 @@
                     }
                 ],
                 "opacity": {
-                    "condition": {
-                        "selection": "continent",
-                        "value": 1
-                    },
+                    "condition": [
+                        {
+                            "test": {
+                                "selection": "continent"
+                            },
+                            "value": 1
+                        }
+                    ],
                     "value": 0.2
                 }
             },
-            "title": "Per capita CO₂ emissions vs. per capita energy consumption (2021)",
             "selection": {
                 "brush": {
                     "type": "interval",
                     "bind": "scales"
                 },
                 "continent": {
-                    "type": "multi",
+                    "type": "single",
                     "fields": [
                         "Continent"
                     ],
-                    "bind": "legend"
+                    "bind": {
+                        "input": "select",
+                        "options": [
+                            null,
+                            "Africa",
+                            "Asia",
+                            "Europe",
+                            "North America",
+                            "South America",
+                            "Oceania"
+                        ],
+                        "labels": [
+                            "World",
+                            "Africa",
+                            "Asia",
+                            "Europe",
+                            "North America",
+                            "South America",
+                            "Oceania"
+                        ],
+                        "name": "Select Continent"
+                    }
                 }
             }
         },
@@ -154,6 +186,32 @@
                 "text": {
                     "field": "Country",
                     "type": "nominal"
+                }
+            }
+        },
+        {
+            "transform": [
+                {
+                    "regression": "Consumption",
+                    "on": "Emissions",
+                    "extent": [
+                        -1,
+                        30
+                    ]
+                }
+            ],
+            "mark": "line",
+            "encoding": {
+                "x": {
+                    "field": "Consumption",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "Emissions",
+                    "type": "quantitative"
+                },
+                "color": {
+                    "value": "lightgray"
                 }
             }
         }

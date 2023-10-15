@@ -1,6 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Opposition to Nuclear Energy (2011)",
+  "title": {
+    "text": "Opposition to Nuclear Energy (2011)",
+    "font": "Monospace",
+    "fontSize": 24,
+    "fontWeight": "bold",
+    "anchor": "middle",
+    "offset": 10
+  },
   "description": "Percentage of respondents opposed to nuclear energy by country, as per Ipsos MORI (2011).",
   "width": 800,
   "height": 400,
@@ -100,9 +107,10 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "dx": 300,
+        "dx": 500,
         "dy": -10,
-        "color": "gray"
+        "color": "gray",
+        "fontSize": 20
       },
       "encoding": {
         "y": {
@@ -136,9 +144,10 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "dx": 405,
+        "dx": 695,
         "dy": -10,
-        "color": "gray"
+        "color": "gray",
+        "fontSize": 20
       },
       "encoding": {
         "y": {
