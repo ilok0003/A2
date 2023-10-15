@@ -108,13 +108,28 @@ p {
     margin-bottom: 10px;
 }
 
-/* Highlighting key terms */
+/* Highlight Styles */
 .highlight1 {
-    color: #e74c3c; /* Red accent */
+    color: #FF6F61;  /* A fiery red, representing significance and importance */
     font-weight: bold;
 }
 
 .highlight2 {
-    color: #3498db; /* Blue accent */
+    color: #4FC3F7;  /* A cool blue, resonating with the idea of water and traditional energy */
+    font-weight: bold;
+}
+
+.highlight3 {
+    color: #81C784;  /* Fresh green, symbolizing renewable energy and environment */
+    font-weight: bold;
+}
+
+.highlight4 {
+    color: #FFD54F;  /* A lively yellow, symbolizing caution and environmental impact */
+    font-weight: bold;
+}
+
+.highlight5 {
+    color: #BA68C8;  /* A subdued purple, representing the potential of nuclear power with a touch of mystery */
     font-weight: bold;
 }
