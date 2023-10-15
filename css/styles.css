@@ -53,7 +53,7 @@ p {
 .viz-container .placeholder {
     flex: 1;
     border: 1px dashed #d1d9e0; /* Dashed border for placeholders */
-    padding: 20px; /* Padding inside placeholders */
+    padding: 20px, 20px; /* Padding inside placeholders */
     background-color: #f9fcfd; /* Very light blue background for placeholders */
     border-radius: 8px; /* Rounded corners for placeholder boxes */
     display: flex;
